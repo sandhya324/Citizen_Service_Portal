@@ -6,7 +6,18 @@ const Navbar = () => {
   return (
     
     <div className="navbar">
-      <img src={assets.logo} alt="Logo" className="Logo"/>
+
+
+      <div className="navbar-left">
+         <img src={assets.logo} alt="Logo" />
+
+         <div className="logo-text">
+          <p>Citizen Service Portal</p>
+          <span>Government of India</span>
+         </div>
+        
+      </div>
+        
 
       <ul className="navbar-links">
         <li>Home</li>
@@ -14,9 +25,16 @@ const Navbar = () => {
         <li>Register Complaint</li>
         <li>Track Status</li>
         <li>Contact Us</li>
-        <li>Login</li>
-        <li>Register</li>
       </ul>
+
+
+      <div className="navbar-right">
+
+        <button>Login</button>
+        <button>Register</button>
+    
+      </div>
+
 
     </div>
 
