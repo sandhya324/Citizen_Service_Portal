@@ -51,19 +51,29 @@
     background: #14B8A6;
 }
 .navbar-right{
-    cursor: pointer;
     display:flex;
     align-items: center;
     gap: 20px;
     list-style: none;
 }
 .navbar-right button{
+    cursor: pointer;
     font-size: 15px;
     background-color: transparent;
-    color: white;
+    color: #E2E8F0;
     padding: 3px 13px;
     border: 1px solid rgba(255,255,255,0.3);
+    transition: 0.3s;
 }
 .navbar-right button:hover{
     background-color:#0F766E;
 }
+
+.navbar .navbar-links .active{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #14B8A6;
+}
+.navbar li{
+    cursor: pointer;
+}
+

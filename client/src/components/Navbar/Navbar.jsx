@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '/src/assets/assets.js'
 
 const Navbar = () => {
+
+  const [menu, setMenu] = useState("Home");
+
   return (
     
     <div className="navbar">
@@ -20,13 +23,12 @@ const Navbar = () => {
         
 
       <ul className="navbar-links">
-        <li>Home</li>
-        <li>Services</li>
-        <li>Register Complaint</li>
-        <li>Track Status</li>
-        <li>Contact Us</li>
+        <li onClick={()=>setMenu("Home")} className={menu==="Home" ? "active" : ""}  >Home</li>
+        <li onClick={()=>setMenu("Services")} className={menu==="Services" ? "active" : ""} >Services</li>
+        <li onClick={()=>setMenu("Register Complaint")} className={menu==="Register Complaint"? "active" : ""} >Register Complaint</li>
+        <li onClick={()=>setMenu("Track Status")} className={menu==="Track Status" ? "active" : ""} >Track Status</li>
+        <li onClick={()=>setMenu("Contact Us")} className={menu==="Contact Us" ? "active" : " "} >Contact Us</li>
       </ul>
-
 
       <div className="navbar-right">
 
