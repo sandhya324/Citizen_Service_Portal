@@ -1,4 +1,51 @@
-.carousel-item img{
-    width:100%;
-    height:auto;
+/* ------------------------------------------------Carousel Styles ------------------------------------------------ */
+
+
+
+
+
+
+
+/* ------------------------------------------------Hero Section Styles ------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------Quick Services Section------------------------------------------- */
+
+
+
+
+
+
+/* ----------------------------------------------------How It Works Section------------------------------------------- */
+
+
+.step-card {
+  background: #ffffff;
+  transition: 0.3s ease;
+  border: 1px solid #eef2f7;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #0d6efd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }

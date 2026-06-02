@@ -7,6 +7,7 @@
 }
 
 .navbar .navbar-left{
+    padding-left: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -51,6 +52,7 @@
     background: #14B8A6;
 }
 .navbar-right{
+    padding-right: 20px;
     display:flex;
     align-items: center;
     gap: 20px;
