@@ -28,24 +28,23 @@
   color: #4A5568;
 }
 
-.container .Hero-left .hero-buttons{
+.hero-buttons{
     display: flex;
     gap: 10px;
 }
 
-.container .Hero-left .hero-buttons button{
+.hero-buttons button{
     cursor: pointer;
     font-size: 15px;
-    background-color: transparent;
-    color: #0B3B39;
-    padding: 3px 13px;
-    border: 1px solid rgba(255,255,255,0.3);
+    background-color:#0F766E;
+    color: white;
+    padding: 5px 13px;
+    border: 1px solid #0B3B39;
     transition: 0.3s;
 }
 
-
-.container .Hero-left  .hero-buttons button:hover{
-    background-color:#0F766E;
+.hero-buttons button:hover{
+  background-color: #0B3B39;
 }
 
 

@@ -73,7 +73,7 @@ const Home = () => {
       <div className="Hero-left">
 
            <h1>One Portal, <br/> Multiple </h1>
-           <h1 style={{ color: '#0B3B39' }}>Government Services</h1>
+           <h1 style={{ color: '#0F766E' }}>Government Services</h1>
            <p>Access certificates, licenses, grievance redressal, and application tracking through a single platform.</p>
 
         <div className="hero-buttons">
