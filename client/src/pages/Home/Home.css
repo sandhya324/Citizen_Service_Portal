@@ -1,17 +1,52 @@
 /* ------------------------------------------------Carousel Styles ------------------------------------------------ */
-
-
-
+.carousel-inner img{
+  height: 750px;
+  object-fit: cover;
+}
 
 
 
 
 /* ------------------------------------------------Hero Section Styles ------------------------------------------------ */
 
+.container{
+  padding-bottom: 2px;
+  border-bottom: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container img{
+  height: 500px;
+}
+
+.container .Hero-left h1{
+  font-weight: bold;
+}
+.container .Hero-left p{
+  color: #4A5568;
+}
+
+.container .Hero-left .hero-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.container .Hero-left .hero-buttons button{
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent;
+    color: #0B3B39;
+    padding: 3px 13px;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: 0.3s;
+}
 
 
-
-
+.container .Hero-left  .hero-buttons button:hover{
+    background-color:#0F766E;
+}
 
 
 

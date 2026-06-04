@@ -1,5 +1,5 @@
 import React from 'react'
-import { assets } from '../../assets/assets'
+import { assets } from '/src/assets/assets.js'
 import './Home.css'
 
 const Home = () => {
@@ -10,10 +10,10 @@ const Home = () => {
 { /* ------------------------------------------------------------------------Carousel------------------------------------------------------------------------------------------- */}
 
 <div
-  id="carouselExampleSlidesOnly"
+  id="heroCarousel"
   className="carousel slide"
   data-bs-ride="carousel"
-  data-bs-interval="2000"
+  data-bs-interval="2500"
 >
   <div className="carousel-inner">
     <div className="carousel-item active">
@@ -25,34 +25,71 @@ const Home = () => {
     </div>
 
      <div className="carousel-item">
-      <img src="https://picsum.photos/1200/400?1" className="d-block w-100" alt="" />
+      <img src={assets.slide3} className="d-block w-100" alt="Slide 3" />
     </div>
-    
+
+    <div className="carousel-item">
+      <img src={assets.slide4} className="d-block w-100" alt="Slide 4" />
+    </div>
+
+    <div className="carousel-item">
+      <img src={assets.slide5} className="d-block w-100" alt="Slide 5" />
+    </div>
+  
 
   </div>
 </div>
 
+<button
+  className="carousel-control-prev"
+  type="button"
+  data-bs-target="#heroCarousel"
+  data-bs-slide="prev"
+>
+  <span className="carousel-control-prev-icon"></span>
+</button>
+
+<button
+  className="carousel-control-next"
+  type="button"
+  data-bs-target="#heroCarousel"
+  data-bs-slide="next"
+>
+  <span className="carousel-control-next-icon"></span>
+</button>
+
      
+
+
+
+
+
 
 
 { /* ------------------------------------------------------------------------Hero Section ------------------------------------------------------------------------------------------- */}
 
-  <div className="hero py-5">
     <div className="container">
       
       <div className="Hero-left">
 
-           <h1>Digital Citizen Service Portal</h1>
-           <p>Apply for government services, register complaints, and track applications online.</p>
+           <h1>One Portal, <br/> Multiple </h1>
+           <h1 style={{ color: '#0B3B39' }}>Government Services</h1>
+           <p>Access certificates, licenses, grievance redressal, and application tracking through a single platform.</p>
 
-           <button>Apply Now</button>
+        <div className="hero-buttons">
+           <button>Apply for Service</button>
            <button>Track Status</button>
+        </div>
            
       </div>
 
-    </div>
-  </div>
 
+      <div className="hero-img">
+        <img src={assets.heroImg} alt="Hero Image" />
+      </div>
+
+    </div>
+  
 
 
 
