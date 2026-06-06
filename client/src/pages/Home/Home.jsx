@@ -106,42 +106,42 @@ const Home = () => {
         <div className="service-cards">
 
             <div className="card" style={{ width: '10rem' }}>
-             <img src="..." className="card-img-top" alt="..." />
+             <img src={assets.birth} className="card-img-top" alt="..."  />
                 <div className="card-body">
                     <p className="card-text">Birth Certificate</p>
                 </div>
            </div>
 
            <div className="card" style={{ width: '10rem' }}>
-             <img src="..." className="card-img-top" alt="..." />
+             <img src={assets.income} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <p className="card-text">Income Certificate</p>
                 </div>
            </div>
 
            <div className="card" style={{ width: '10rem' }}>
-             <img src="..." className="card-img-top" alt="..." />
+             <img src={assets.water} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <p className="card-text">Water Connection</p>
                 </div>
            </div>
 
            <div className="card" style={{ width: '10rem' }}>
-             <img src="..." className="card-img-top" alt="..." />
+             <img src={assets.electricity} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <p className="card-text">Electricity Complaint</p>
                 </div>
            </div>
 
            <div className="card" style={{ width: '10rem' }}>
-             <img src="..." className="card-img-top" alt="..." />
+             <img src={assets.road} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <p className="card-text">Road Repair Request</p>
                 </div>
            </div>
 
            <div className="card" style={{ width: '10rem' }}>
-             <img src="..." className="card-img-top" alt="..." />
+             <img src={assets.pension} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <p className="card-text">Pension Request</p>
                 </div>
@@ -174,7 +174,7 @@ const Home = () => {
       {/* Step 1 */}
       <div className="col-md-3">
         <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <div className="step-number">1</div>
+          <img src={assets.register} className="card-img-top" alt="..." />
           <h5>Register</h5>
           <p>Create your account using mobile/email</p>
         </div>
@@ -183,7 +183,7 @@ const Home = () => {
       {/* Step 2 */}
       <div className="col-md-3">
         <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <div className="step-number">2</div>
+          <img src={assets.apply} className="card-img-top" alt="..." />
           <h5>Apply</h5>
           <p>Choose service and submit documents</p>
         </div>
@@ -192,7 +192,7 @@ const Home = () => {
       {/* Step 3 */}
       <div className="col-md-3">
         <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <div className="step-number">3</div>
+          <img src={assets.verify} className="card-img-top" alt="..." />
           <h5>Verification</h5>
           <p>Department verifies your request</p>
         </div>
@@ -201,7 +201,7 @@ const Home = () => {
       {/* Step 4 */}
       <div className="col-md-3">
         <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <div className="step-number">4</div>
+          <img src={assets.track} className="card-img-top" alt="..." />
           <h5>Track Status</h5>
           <p>Track progress in real time</p>
         </div>

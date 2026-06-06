@@ -51,19 +51,71 @@
 
 
 /* ----------------------------------------------------Quick Services Section------------------------------------------- */
+.quick-services{
+  padding: 25px 10px;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.9),
+    rgba(226,232,240,0.8)
+  );
+  backdrop-filter: blur(10px);
+}
+
+
+.service-text h2{
+  text-align: center;
+  color: #0B3B39;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.service-text p{
+  color: #4A5568;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+}
 
 
 
+.service-cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;   /* cards move to next line on smaller screens */
+  gap: 20px;
+  padding: 20px;
+}
 
+.service-cards .card{
+  width: 10rem;
+  transition: all 0.3s ease;  /* Smoothly animate all changes in 0.3 seconds */
+  cursor: pointer;
+  margin: 0;
+}
+.service-cards .card:hover{
+  transform: translateY(-10px) scale(1.05);  /* Move card 10px up and increase size by 5% */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a soft shadow to create a floating effect */
+}
 
+.service-cards .card-body{
+  padding: 5px;
+  text-align: center;
+}
+
+.service-cards .card-text{
+  margin: 0;
+  font-size: 15px;
+}
 
 /* ----------------------------------------------------How It Works Section------------------------------------------- */
-
 
 .step-card {
   background: #ffffff;
   transition: 0.3s ease;
   border: 1px solid #eef2f7;
+  width: 200px;
+  margin: auto;
 }
 
 .step-card:hover {
@@ -71,15 +123,10 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.step-number {
-  width: 40px;
-  height: 40px;
-  margin: 0 auto 10px;
-  border-radius: 50%;
-  background: #0d6efd;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
+.row img{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto 15px;
+
 }

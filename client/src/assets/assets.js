@@ -9,6 +9,21 @@ import slide5 from './slide_5.png';
 import heroImg from './hero_img.png';
 
 
+import birth from './birth.png';
+import water from './water.png';
+import income from './income.png';
+import electricity from './electricity.png';
+import road from './road.png';
+import pension from './pension.png';
+
+
+import register from './register.png';
+import apply from './apply.png';
+import verify from './verify.png';
+import track from './track.png';
+
+
+
 export const assets ={
     logo,
     
@@ -18,5 +33,17 @@ export const assets ={
     slide4,
     slide5,
 
-    heroImg
+    heroImg,
+
+    birth,
+    water, 
+    income,
+    electricity,
+    road,
+    pension,
+
+    register,
+    apply,
+    verify,
+    track
 }
