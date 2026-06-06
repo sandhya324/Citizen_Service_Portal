@@ -95,62 +95,89 @@ const Home = () => {
 
 { /* -----------------------------------------------------------------------Quick Services Section------------------------------------------------------------------------------------------ */}
        
-       <div className="quick-services">
+ <div className="quick-services">
 
-        <div className="service-text">
-           <h2>Quick Access Services</h2>
-           <p>Access essential government services quickly and securely.</p>
+    <div className="service-text">
+      <h2>Quick Access Services</h2>
+      <p>Access essential government services quickly and securely.</p>
+    </div>
+
+
+    <div className="services-acess py-5">
+    <div className="container">
+
+    <div className="row g-4">
+
+      <div className="col-md-3">
+        <div className="step-card text-center p-4 shadow-sm rounded-4">
+          <img src={assets.birth} className="card-img-top" alt="..." />
+          <h5>Birth Certificate</h5>
+          <p></p>
         </div>
+      </div>
 
-
-        <div className="service-cards">
-
-            <div className="card" style={{ width: '10rem' }}>
-             <img src={assets.birth} className="card-img-top" alt="..."  />
-                <div className="card-body">
-                    <p className="card-text">Birth Certificate</p>
-                </div>
-           </div>
-
-           <div className="card" style={{ width: '10rem' }}>
-             <img src={assets.income} className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <p className="card-text">Income Certificate</p>
-                </div>
-           </div>
-
-           <div className="card" style={{ width: '10rem' }}>
-             <img src={assets.water} className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <p className="card-text">Water Connection</p>
-                </div>
-           </div>
-
-           <div className="card" style={{ width: '10rem' }}>
-             <img src={assets.electricity} className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <p className="card-text">Electricity Complaint</p>
-                </div>
-           </div>
-
-           <div className="card" style={{ width: '10rem' }}>
-             <img src={assets.road} className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <p className="card-text">Road Repair Request</p>
-                </div>
-           </div>
-
-           <div className="card" style={{ width: '10rem' }}>
-             <img src={assets.pension} className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <p className="card-text">Pension Request</p>
-                </div>
-           </div>
-
+      <div className="col-md-3">
+        <div className="step-card text-center p-4 shadow-sm rounded-4">
+          <img src={assets.income} className="card-img-top" alt="..." />
+          <h5>Income Certificate</h5>
+          <p></p>
         </div>
+      </div>
+
+      <div className="col-md-3">
+        <div className="step-card text-center p-4 shadow-sm rounded-4">
+          <img src={assets.water} className="card-img-top" alt="..." />
+          <h5>Water Connection</h5>
+          <p></p>
+        </div>
+      </div>
+
+      <div className="col-md-3">
+        <div className="step-card text-center p-4 shadow-sm rounded-4">
+          <img src={assets.electricity} className="card-img-top" alt="..." />
+          <h5>Electricity Complaint</h5>
+          <p></p>
+        </div>
+      </div>
+
+      <div className="col-md-3">
+        <div className="step-card text-center p-4 shadow-sm rounded-4">
+          <img src={assets.road} className="card-img-top" alt="..." />
+          <h5>Road Repair Request</h5>
+          <p></p>
+        </div>
+      </div>
+
+      <div className="col-md-3">
+        <div className="step-card text-center p-4 shadow-sm rounded-4">
+          <img src={assets.pension} className="card-img-top" alt="..." />
+          <h5>Pension Request</h5>
+          <p></p>
+        </div>
+      </div>
+
+      <div className="col-md-3">
+        <div className="step-card text-center p-4 shadow-sm rounded-4">
+          <img src={assets.license} className="card-img-top" alt="..." />
+          <h5>License Application</h5>
+          <p></p>
+        </div>
+      </div>
+
+      <div className="col-md-3">
+        <div className="step-card text-center p-4 shadow-sm rounded-4">
+          <img src={assets.ration} className="card-img-top" alt="..." />
+          <h5>Ration Card Services</h5>
+          <p></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
 
 
-       </div>
+  </div>
 
 
 
@@ -162,54 +189,6 @@ const Home = () => {
 
 { /* -----------------------------------------------------------------------How It Works section------------------------------------------------------------------------------------------ */}
 
- <div className="how-it-works py-5">
-  <div className="container">
-
-    <h2 className="text-center mb-5">
-      How It Works
-    </h2>
-
-    <div className="row g-4">
-
-      {/* Step 1 */}
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.register} className="card-img-top" alt="..." />
-          <h5>Register</h5>
-          <p>Create your account using mobile/email</p>
-        </div>
-      </div>
-
-      {/* Step 2 */}
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.apply} className="card-img-top" alt="..." />
-          <h5>Apply</h5>
-          <p>Choose service and submit documents</p>
-        </div>
-      </div>
-
-      {/* Step 3 */}
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.verify} className="card-img-top" alt="..." />
-          <h5>Verification</h5>
-          <p>Department verifies your request</p>
-        </div>
-      </div>
-
-      {/* Step 4 */}
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.track} className="card-img-top" alt="..." />
-          <h5>Track Status</h5>
-          <p>Track progress in real time</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 
 
