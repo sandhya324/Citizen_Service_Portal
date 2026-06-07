@@ -15,6 +15,8 @@ import income from './income.png';
 import electricity from './electricity.png';
 import road from './road.png';
 import pension from './pension.png';
+import license from './license.png';
+import ration from './ration.png';
 
 
 import register from './register.png';
@@ -41,6 +43,8 @@ export const assets ={
     electricity,
     road,
     pension,
+    license,
+    ration,
 
     register,
     apply,
