@@ -1,8 +1,8 @@
 import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import {FaBaby, FaUsers, FaRoad, FaBolt, FaTint, FaFileAlt, FaHome} from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaLinkedinIn, FaTwitter, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaHeadset } from "react-icons/fa";
+import {FaBaby, FaUsers, FaRoad, FaBolt, FaTint, FaFileAlt, FaHome } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -78,10 +78,31 @@ const Footer = () => {
 
         {/* ------------------------------footer-right-------------------------- */}
         <div className="footer-content-right">
+            <h4>Contact Us</h4>
+                <ul>
+                    <li><FaMapMarkerAlt className="service-icon" /> New Delhi, India - 110001</li>
+                    <li><FaPhoneAlt className="service-icon" /> +91 1800-123-456</li>
+                    <li><FaEnvelope className="service-icon" /> support@citizenportal.gov.in</li>
+                    <li><FaClock className="service-icon" /> Mon - Fri: 9:00 AM - 6:00 PM</li>
+                </ul>
 
+
+                <div className="help_card">
+                   <FaHeadset className="help-icon" />
+
+                   <div>
+                    <h5>Need Help?</h5>
+                    <p>Our support team is<br/> always here for you.</p>
+                   </div>
+                </div>
+        </div>
+      </div>
+
+        {/* ------------------------------footer-bottom-------------------------- */}
+        <div className="footer-bottom">
+          <p>&copy; © 2026 Citizen Service Portal | One Portal, Many Services. All Rights Reserved.</p>
         </div>
 
-      </div>
     </div>
   )
 }
