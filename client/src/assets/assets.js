@@ -26,6 +26,7 @@ import track from './track.png';
 
 
 
+
 export const assets ={
     logo,
     
@@ -49,5 +50,6 @@ export const assets ={
     register,
     apply,
     verify,
-    track
+    track,
+
 }

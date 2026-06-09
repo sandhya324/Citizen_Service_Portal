@@ -1,0 +1,125 @@
+.footer{
+    padding-top: 20px;
+    background: #0B3B39;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+
+/* ------------------------------footer-left -------------------------- */
+.footer-content-left{
+    padding-left: 30px;
+    padding-top: 0;
+    margin-top: 0;
+}
+.footer .logo-part img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.footer .logo-part{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .text-part{
+    width: 270px;
+}
+.footer .text-part p{
+    color: #E2E8F0;
+    padding-top: 25px;
+    font-size: 12px;
+}
+
+
+.text-part .social-icon{
+  width: 45px;
+  height: 45px;
+  background: #0B3B39;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+}
+
+.social-icons{
+  display:flex;
+  gap:15px;
+}
+
+.social-icon:hover{
+    background:#0F766E;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* -----------------------------footer-center Quick links--------------------------*/
+.footer-content-center h4{
+    color: #97e6dc;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    display: inline-block;
+}
+.footer-content-center ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-content-center li{
+    color: #E2E8F0;
+    padding-top: 3px;
+}
+.footer-content-center li::before {
+    content: "›";
+    margin-right: 8px;
+    color: #97e6dc;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* -----------------------------footer-center Popular services --------------------------*/
+.footer-content-popular h4{
+    color: #97e6dc;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    display: inline-block;
+}
+.footer-content-popular ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-content-popular li{
+    color: #E2E8F0;
+    padding-top: 5px;
+}
+
+
+.footer-content-popular .service-icon{
+    color: #97e6dc;
+}
+
+
+
+
+/* -----------------------------footer-center Popular services --------------------------*/
