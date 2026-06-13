@@ -100,7 +100,7 @@ const Footer = () => {
 
         {/* ------------------------------footer-bottom-------------------------- */}
         <div className="footer-bottom">
-          <p>&copy; © 2026 Citizen Service Portal | One Portal, Many Services. All Rights Reserved.</p>
+          <p>&copy; 2026 Citizen Service Portal | One Portal, Many Services. All Rights Reserved.</p>
         </div>
 
     </div>

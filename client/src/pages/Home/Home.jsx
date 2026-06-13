@@ -189,7 +189,15 @@ const Home = () => {
 
 { /* -----------------------------------------------------------------------How It Works section------------------------------------------------------------------------------------------ */}
 
+      <div className="how-it-works">
+        <div className="work-text">
+          
+          <h2>How it Works</h2>
+          <h4>Simple Steps,Better Citizen Service</h4>
+          <p>Our platform makes it easy for you to access government services in just a few simple steps.</p>
 
+        </div>
+      </div>
 
 
 
