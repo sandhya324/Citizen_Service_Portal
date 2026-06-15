@@ -39,7 +39,7 @@
     background-color:#0F766E;
     color: white;
     padding: 5px 13px;
-    border: 1px solid #0B3B39;
+    border: 1px solid  #14B8A6;
     transition: 0.3s;
 }
 
@@ -113,3 +113,91 @@
 
 /* ----------------------------------------------------How It Works Section------------------------------------------- */
 
+.section-header {
+    background: linear-gradient(
+        135deg,
+        #0B3B39,
+        #0F766E,
+        #14B8A6
+    );
+
+    padding: 80px 20px 180px;
+    text-align: center;
+}
+
+.section-header h2{
+  text-align: center;
+  color: #97e6dc;
+  font-weight: 600;
+}
+.section-header p{
+  width: 400px;
+  margin: auto;
+  color: #cecfd1;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+}
+.steps-container{
+  margin-top: -170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap:30px;
+  flex-wrap:wrap;
+}
+.steps-container .card .step-number{
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: white;
+  border: 2px solid #14B8A6;
+  
+  width:50px;
+  height: 50px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  font-size: 18px;
+  border-radius: 100%;
+  margin: auto;
+}
+.steps-container .card .step-number p{
+    margin: 14px;
+}
+
+.steps-container .card{
+  padding: 40px 20px 20px 20px; /* top right bottom left */
+  min-height: 320px;
+  position: relative;
+  cursor: pointer;
+  width: 220px;
+  background: #fff;
+  border-radius: 15px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.steps-container .card:hover{
+  transform: perspective(1000px) scale(1.08);
+}
+
+.steps-container .card img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.steps-container .card h5{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.steps-container .card p{
+  font-size: 15px;
+  color: #4A5568;
+}

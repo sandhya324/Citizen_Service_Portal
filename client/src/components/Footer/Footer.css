@@ -90,6 +90,7 @@
     color: #E2E8F0;
     padding-top: 3px;
 }
+
 .footer-content-center li::before {
     content: "›";
     margin-right: 8px;
