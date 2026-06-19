@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '/src/assets/assets.js'
 
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
 
   const [menu, setMenu] = useState("Home");
@@ -23,9 +25,9 @@ const Navbar = () => {
         
 
       <ul className="navbar-links">
-        <li onClick={()=>setMenu("Home")} className={menu==="Home" ? "active" : ""}  >Home</li>
-        <li onClick={()=>setMenu("Services")} className={menu==="Services" ? "active" : ""} >Services</li>
-        <li onClick={()=>setMenu("Register Complaint")} className={menu==="Register Complaint"? "active" : ""} >Register Complaint</li>
+        <li onClick={()=>setMenu("Home")} className={menu==="Home" ? "active" : ""}  ><Link to="/">Home</Link></li>
+        <li onClick={()=>setMenu("Services")} className={menu==="Services" ? "active" : ""} ><Link to="services">Service</Link></li>
+        <li onClick={()=>setMenu("RegisterComplaint")} className={menu==="RegisterComplaint"? "active" : ""} ><Link to="registercomplaint">Register Complaint</Link></li>
         <li onClick={()=>setMenu("Track Status")} className={menu==="Track Status" ? "active" : ""} >Track Status</li>
         <li onClick={()=>setMenu("Contact Us")} className={menu==="Contact Us" ? "active" : " "} >Contact Us</li>
       </ul>

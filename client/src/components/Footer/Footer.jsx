@@ -1,10 +1,17 @@
 import React from 'react'
+import { useState } from 'react';
+
 import './Footer.css'
 import { assets } from '../../assets/assets'
 import { FaFacebookF, FaYoutube, FaLinkedinIn, FaTwitter, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaHeadset } from "react-icons/fa";
 import {FaBaby, FaUsers, FaRoad, FaBolt, FaTint, FaFileAlt, FaHome } from "react-icons/fa";
 
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
+
+  const [menu, setMenu] = useState("Home"); 
+
   return (
     <div className='footer' id='footer'>
       <div className="footer-content">
@@ -43,13 +50,13 @@ const Footer = () => {
         <div className="footer-content-center">
             <h4>Quick Links</h4>
                 <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Track Application</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>FAQs</li>
-                    <li>Help & Support</li>
+                    <li onClick={()=>setMenu("Home")} className={menu==="Home" ? "active" : ""}  ><Link to="/">Home</Link></li>
+                    <li onClick={()=>setMenu("Services")} className={menu==="Services" ? "active" : ""}  ><Link to="services">Services</Link></li>                
+                    <li onClick={()=>setMenu("TrackStatus")} className={menu==="TrackStatus" ? "active" : ""}  ><Link to="trackstatus">Track Application</Link></li>                   
+                    <li onClick={()=>setMenu("AboutUs")} className={menu==="AboutUs" ? "active" : ""}  ><Link to="aboutus">About Us</Link></li>                   
+                    <li onClick={()=>setMenu("ContactUs")} className={menu==="ContactUs" ? "active" : ""}  ><Link to="contactus">Contact Us</Link></li> 
+                    <li onClick={()=>setMenu("FAQs")} className={menu==="FAQs" ? "active" : ""}  ><Link to="faqs">FAQs</Link></li> 
+                    <li onClick={()=>setMenu("HelpSupport")} className={menu==="HelpSupport<" ? "active" : ""}  ><Link to="helpsupport<">Help & Support</Link></li>
                 </ul>
         </div>
 

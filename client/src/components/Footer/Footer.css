@@ -85,6 +85,11 @@
     list-style: none;
     padding-left: 0;
 }
+.footer-content-center li a{
+    text-decoration: none;
+    color: #E2E8F0;
+}
+
 .footer-content-center li{
     cursor: pointer;
     color: #E2E8F0;

@@ -1,9 +1,12 @@
 import React from 'react'
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from './components/Navbar/Navbar'
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/Home'
 import Footer from './components/Footer/Footer'
 import ScrollTop from './components/ScrollTop/ScrollTop'
+
+import Home from './pages/Home/Home'
+import Services from './pages/Services/Services';
 
 
 const App = () => {
@@ -13,6 +16,7 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </div>
     <ScrollTop />
