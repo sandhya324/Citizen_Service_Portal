@@ -24,7 +24,7 @@ import apply from './apply.png';
 import verify from './verify.png';
 import track from './track.png';
 
-
+import bhawan from './bhawan.png'
 
 
 export const assets ={
@@ -51,5 +51,7 @@ export const assets ={
     apply,
     verify,
     track,
+
+    bhawan
 
 }

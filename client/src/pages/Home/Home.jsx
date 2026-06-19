@@ -1,7 +1,7 @@
 import React from 'react'
 import { assets } from '/src/assets/assets.js'
 import './Home.css'
-// import { FaUserPlus, FiFileText, FiClipboard, FiCheckCircle } from "react-icons/fi";
+import { FiUserPlus, FiFileText, FiClipboard, FiCheckCircle, FiAtSign, FiArrowUp } from "react-icons/fi";
 
 const Home = () => {
   return (
@@ -202,50 +202,43 @@ const Home = () => {
 
           <div className="card">
             <div className="step-number"><p>1</p></div>
-            {/* <div className="step-icon"><FiUserPlus/></div> */}
-            <h5>Create an Account</h5>
-            <p>Register using your basic details to securely access all available citizen services.</p>
+            <div className="step-icon">< FiUserPlus className="icon" /></div>
+            <div className="step-text">
+                <h5>Create an Account</h5>
+                <p>Register using your basic details to securely access all available citizen services.</p>
+            </div>   
           </div>
 
           <div className="card">
             <div className="step-number"><p>2</p></div>
-            {/* <i className='step-icon'><FiFileText /></i> */}
-            <h5>Choose a Service</h5>
-            <p>Browse through available services and select the one that best meets your needs.</p>
+            <div className="step-icon"><FiFileText className="icon" /></div>
+            <div className="step-text">
+                <h5>Choose a Service</h5>
+                <p>Browse through available services and select the one that best meets your needs.</p>
+            </div>
           </div>
 
           <div className="card">
             <div className="step-number"><p>3</p></div>
-            {/* <i className='step-icon'><FiClipboard/></i> */}
-            <h5>Submit Application</h5>
-            <p>Fill out the required information and upload supporting documents online.</p>
+            <div className="step-icon"><FiClipboard className="icon" /></div>
+             <div className="step-text">
+                <h5>Submit Application</h5>
+                <p>Fill out the required information and upload supporting documents online.</p>
+             </div>
           </div>
 
           <div className="card">
             <div className="step-number"><p>4</p></div>
-            {/* <i className='step-icon'><FiCheckCircle /></i> */}
-            <h5>Track & Receive</h5>
-            <p>Monitor your application status in real time and receive updates digitally anytime.</p>
+            <div className="step-icon"><FiCheckCircle className="icon" /></div>
+            <div className="step-text">
+                <h5>Track & Receive</h5>
+                <p>Monitor your application status in real time and receive updates digitally anytime.</p>
+            </div>
           </div>
 
         </div>
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         
 
