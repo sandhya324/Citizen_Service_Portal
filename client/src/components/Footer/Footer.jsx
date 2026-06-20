@@ -56,7 +56,7 @@ const Footer = () => {
                     <li onClick={()=>setMenu("AboutUs")} className={menu==="AboutUs" ? "active" : ""}  ><Link to="aboutus">About Us</Link></li>                   
                     <li onClick={()=>setMenu("ContactUs")} className={menu==="ContactUs" ? "active" : ""}  ><Link to="contactus">Contact Us</Link></li> 
                     <li onClick={()=>setMenu("FAQs")} className={menu==="FAQs" ? "active" : ""}  ><Link to="faqs">FAQs</Link></li> 
-                    <li onClick={()=>setMenu("HelpSupport")} className={menu==="HelpSupport<" ? "active" : ""}  ><Link to="helpsupport<">Help & Support</Link></li>
+                    <li onClick={()=>setMenu("HelpSupport")} className={menu==="HelpSupport" ? "active" : ""}  ><Link to="helpsupport">Help & Support</Link></li>
                 </ul>
         </div>
 
