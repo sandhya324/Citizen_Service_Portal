@@ -26,7 +26,7 @@ const Navbar = ({setShowLogin}) => {
 
       <ul className="navbar-links">
         <li onClick={()=>setMenu("Home")} className={menu==="Home" ? "active" : ""}  ><Link to="/">Home</Link></li>
-        <li onClick={()=>setMenu("Services")} className={menu==="Services" ? "active" : ""} ><Link to="services">Service</Link></li>
+        <li onClick={()=>setMenu("Services")} className={menu==="Services" ? "active" : ""} ><Link to="services">Services</Link></li>
         <li onClick={()=>setMenu("RegisterComplaint")} className={menu==="RegisterComplaint"? "active" : ""} ><Link to="registercomplaint">Register Complaint</Link></li>
         <li onClick={()=>setMenu("Track Status")} className={menu==="Track Status" ? "active" : ""} ><Link to="trackstatus">Track Status</Link></li>
         <li onClick={()=>setMenu("Contact Us")} className={menu==="Contact Us" ? "active" : " "} ><Link to="contactus">Contact Us</Link></li>

@@ -8,58 +8,18 @@ const Home = () => {
     <div>
 
 
+
+
 { /* ------------------------------------------------------------------------Carousel------------------------------------------------------------------------------------------- */}
-
-<div
-  id="heroCarousel"
-  className="carousel slide"
-  data-bs-ride="carousel"
-  data-bs-interval="2500"
->
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={assets.slide1} className="d-block w-100" alt="Slide 1" />
-    </div>
-
-    <div className="carousel-item">
-      <img src={assets.slide2} className="d-block w-100" alt="Slide 2" />
-    </div>
-
-     <div className="carousel-item">
-      <img src={assets.slide3} className="d-block w-100" alt="Slide 3" />
-    </div>
-
-    <div className="carousel-item">
-      <img src={assets.slide4} className="d-block w-100" alt="Slide 4" />
-    </div>
-
-    <div className="carousel-item">
-      <img src={assets.slide5} className="d-block w-100" alt="Slide 5" />
-    </div>
-  
-
+  <div className="header-container">
+    <img src={assets.header} className="head-img" alt="Header" />
   </div>
-</div>
 
-<button
-  className="carousel-control-prev"
-  type="button"
-  data-bs-target="#heroCarousel"
-  data-bs-slide="prev"
->
-  <span className="carousel-control-prev-icon"></span>
-</button>
 
-<button
-  className="carousel-control-next"
-  type="button"
-  data-bs-target="#heroCarousel"
-  data-bs-slide="next"
->
-  <span className="carousel-control-next-icon"></span>
-</button>
 
-     
+
+
+
 
 
 
@@ -91,6 +51,43 @@ const Home = () => {
 
     </div>
   
+
+
+
+
+
+
+
+{ /* ------------------------------------------------------------------------Statistics Section------------------------------------------------------------------------------------------- */}
+
+
+<div className="statistics">
+  <ul>
+    <li className = "statis-text">
+          <h3>25+</h3>
+          <p>Services Available</p>
+    </li>
+
+    <li className = "statis-text">
+          <h3>1200+</h3>
+          <p>Applications Processed</p>
+    </li>
+
+    <li className = "statis-text">
+          <h3>500+</h3>
+          <p>Complaints Resolved</p>
+    </li>
+
+    <li className = "statis-text">
+          <h3>5000+</h3>
+          <p>Registered Citizens</p>
+    </li>
+  </ul>
+</div>
+
+
+
+
 
 
 
