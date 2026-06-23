@@ -23,6 +23,14 @@ import track from './track.png';
 import bhawan from './bhawan.png'
 
 
+import card1 from './card_1.png'
+import card2 from './card_2.png'
+import card3 from './card_3.png'
+import card4 from './card_4.png'
+import card5 from './card_5.png'
+import card6 from './card_6.png'
+
+
 export const assets ={
     logo,
     
@@ -44,6 +52,13 @@ export const assets ={
     verify,
     track,
 
-    bhawan
+    bhawan,
+
+    card1,
+    card2,
+    card3,
+    card4,
+    card5,
+    card6
 
 }

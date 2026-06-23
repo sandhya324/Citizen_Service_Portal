@@ -228,18 +228,9 @@
 
 
 .steps-container .card .step-icon{
-  /* border: 1px solid rgba(15,118,110,0.08); */
-  /* width: 80px;
-  height: 80px; */
   display: block;
   margin: 0 auto;
   margin-top: 18px;
-  /* background: linear-gradient(
-    135deg,
-    #14B8A6,
-    #0F766E
-  ); */
-  /* color: white; */
   color: #0F766E;
   border-radius: 50%;
   display: flex;
@@ -248,7 +239,6 @@
   font-size: 20px;
 }
 .steps-container .card .step-icon .icon{
-  /* color : #0B3B39; */
   width: 50px;
   height: 50px;
   align-items: center;
