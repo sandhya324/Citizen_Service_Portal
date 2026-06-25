@@ -7,7 +7,8 @@
 
 .service-head {
     text-align: center;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 .service-head h1{
   text-align: center;
@@ -22,6 +23,34 @@
   text-align: center;
   margin-top: 0;
 }
+
+.filter-btn.active{
+    background-color: #0B3B39;
+    color: white;
+    border: 1px solid #0B3B39;
+}
+
+
+/* -----------------------------------------------------------------------Card filter section------------------------------------------------------------------------------------- */
+
+.service-filters{
+    padding: 20px 0px;
+}
+.filter-btn{
+    padding: 5px 18px;
+    border-radius: 50px;
+    margin: 0px 22px;
+    border: 1px solid #d1e0da;
+    background-color: transparent;
+}
+.filter-btn:hover{
+    border: 1px solid #0B3B39;
+    cursor: pointer;
+}
+
+
+
+
 
 
 

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Services.css'
 import {assets} from '../../assets/assets'
 
 import { FiArrowRight } from "react-icons/fi";
 
 const Services = () => {
+
+   
+  const [activeFilter, setActiveFilter] = useState("all");
 
  
   return (
@@ -21,10 +24,41 @@ const Services = () => {
 
 
 
+
+
+{ /* -----------------------------------------------------------------------Card Filter ------------------------------------------------------------------------------------------ */}
+     
+
+        <div className="service-filters">
+
+          <button className={`filter-btn ${activeFilter === "all" ? "active" : ""}`}  onClick={() => setActiveFilter("all")}>All</button>
+          <button className={`filter-btn ${activeFilter === "identity" ? "active" : ""}`} onClick={() => setActiveFilter("identity")}>Identity & Documents</button>
+          <button className={`filter-btn ${activeFilter === "education" ? "active" : ""}`} onClick={() => setActiveFilter("education")}>Education</button>
+          <button className={`filter-btn ${activeFilter === "health" ? "active" : ""}`} onClick={() => setActiveFilter("health")}>Health</button>
+          <button className={`filter-btn ${activeFilter === "employment" ? "active" : ""}`} onClick={() => setActiveFilter("employment")}>Employment</button>
+          <button className={`filter-btn ${activeFilter === "housing" ? "active" : ""}`} onClick={() => setActiveFilter("housing")}>Housing</button>
+          <button className={`filter-btn ${activeFilter === "agriculture" ? "active" : ""}`} onClick={() => setActiveFilter("agriculture")}>Agriculture</button>
+          <button className={`filter-btn ${activeFilter === "transport" ? "active" : ""}`} onClick={() => setActiveFilter("transport")}>Transport</button>
+
+        </div>
+
+
+
+
+
+
+
+
+
+{ /* -----------------------------------------------------------------------Card section------------------------------------------------------------------------------------------ */}
+
+
       <div className="row g-4">
 
         {/* -----------------------------Identity & Documents Cards-------------------------- */}
-
+      
+      {(activeFilter === "all" || activeFilter === "identity") && (
+       <>
         <div className="col-md-3">
           <div className="card">
             <img src={assets.card1} className="card-img-top" alt="" />
@@ -72,6 +106,8 @@ const Services = () => {
             </div>
           </div>
         </div>
+       </>
+      )}
 
 
  
@@ -80,6 +116,9 @@ const Services = () => {
 
         {/* -----------------------------Education Cards-------------------------- */}
 
+
+      {(activeFilter === "all" || activeFilter === "education") && (
+       <>
         <div className="col-md-3">
           <div className="card">
             <img src={assets.card5} className="card-img-top" alt="" />
@@ -106,7 +145,7 @@ const Services = () => {
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
+            <img src={assets.card7} className="card-img-top" alt="" />
 
             <div className="card-body">
              <h5 className="card-title">Career Guidance</h5>
@@ -115,6 +154,8 @@ const Services = () => {
             </div>
           </div>
         </div>
+      </>
+    )}
 
 
 
@@ -123,11 +164,12 @@ const Services = () => {
 
         {/* -----------------------------Health Cards-------------------------- */}
 
-
+    {(activeFilter === "all" || activeFilter === "health") && (
+      <>
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
+            <img src={assets.card8} className="card-img-top" alt="" />
 
             <div className="card-body">
              <h5 className="card-title">Vaccination Records</h5>
@@ -139,106 +181,146 @@ const Services = () => {
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Health Insurance Schemes</div>
-            <p className="card-text">Explore government-supported health insurance programs and check eligibility for coverage benefits.</p>
-            <button>Learn More</button>
+            <img src={assets.card9} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Health Insurance Schemes</h5>
+             <p className="card-text">Explore health insurance schemes and check your eligibility instantly.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Ayushman Bharat Services</div>
-            <p className="card-text">Apply for and access healthcare benefits under the Ayushman Bharat scheme for eligible citizens.</p>
-            <button>Learn More</button>
+            <img src={assets.card10} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Ayushman Bharat Services</h5>
+             <p className="card-text">Access affordable healthcare benefits through Ayushman Bharat.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Blood Bank Information</div>
-            <p className="card-text">Find nearby blood banks, check blood availability, and access emergency blood donation resources.</p>
-            <button>Learn More</button>
+            <img src={assets.card11} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Blood Bank Information</h5>
+             <p className="card-text">Access nearby blood banks and real-time blood availability instantly.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
-
+      
+      </>
+    )} 
 
 
         {/* -----------------------------Employment Cards-------------------------- */}
 
-
-
-        <div className="col-md-3">
-          <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Internship Opportunities</div>
-            <p className="card-text">Discover internship programs that provide practical experience, skill development, and career growth opportunities.</p>
-            <button>Learn More</button>
-          </div>
-        </div>
+    {(activeFilter === "all" || activeFilter === "employment") && (
+      <>
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Skill Training</div>
-            <p className="card-text">Access training programs, certification courses, and workshops designed to enhance professional skills.</p>
-            <button>Learn More</button>
+            <img src={assets.card12} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Internship Opportunities</h5>
+             <p className="card-text">Gain real-world experience, build skills, and launch your career.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
 
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Employment Exchange</div>
-            <p className="card-text">Connect with employers, explore job opportunities, and access government employment support services.</p>
-            <button>Learn More</button>
+            <img src={assets.card13} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Skill Training</h5>
+             <p className="card-text">Upskill with certified courses and industry-focused training.</p>
+             <button>Learn More</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="col-md-3">
+          <div className="card">
+            <img src={assets.card14} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Employment Exchange</h5>
+             <p className="card-text">Discover jobs, connect with employers, and grow your career.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Government Vacancy Alerts</div>
-            <p className="card-text">Stay updated with the latest government job openings, recruitment notifications, and application deadlines.</p>
-            <button>Learn More</button>
+            <img src={assets.card15} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Govt. Vacancy Alerts</h5>
+             <p className="card-text">Official government jobs, all in one place.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
-
+      </>
+    )}
 
 
         
         {/* -----------------------------Housing & Welfare Cards-------------------------- */}
 
+    {(activeFilter === "all" || activeFilter === "housing") && (
+      <>
+        <div className="col-md-3">
+          <div className="card">
+            <img src={assets.card16} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">PM Awas Yojana</h5>
+             <p className="card-text">Apply for affordable housing and track PMAY benefits with ease.</p>
+             <button>Learn More</button>
+            </div>
+          </div>
+        </div>
+
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">PM Awas Yojana</div>
-            <p className="card-text">Apply for affordable housing assistance and track benefits under the Pradhan Mantri Awas Yojana scheme.</p>
-            <button>Learn More</button>
+            <img src={assets.card17} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Ration Card Services</h5>
+             <p className="card-text">Apply, update, and manage your ration card online.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Ration Card Services</div>
-            <p className="card-text">Apply for, update, and manage ration cards to access subsidized food and essential supplies.</p>
-            <button>Learn More</button>
-          </div>
-        </div>
+            <img src={assets.card18} className="card-img-top" alt="" />
 
-        <div className="col-md-3">
-          <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Pension Schemes</div>
-            <p className="card-text">Access pension benefits, check eligibility, submit applications, and track pension payments online.</p>
-            <button>Learn More</button>
+            <div className="card-body">
+             <h5 className="card-title">Pension Schemes</h5>
+             <p className="card-text">Apply, track, and manage your pension benefits online.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
+      
+      </>
+    )}
 
 
 
@@ -246,94 +328,123 @@ const Services = () => {
         
         {/* -----------------------------Agriculture Cards-------------------------- */}
 
-
+    {(activeFilter === "all" || activeFilter === "agriculture") && (
+      <>
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Farmer Registration</div>
-            <p className="card-text">Register as a farmer to access government schemes, subsidies, and agricultural support services.</p>
-            <button>Learn More</button>
+            <img src={assets.card19} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Farmer Registration</h5>
+             <p className="card-text">Access schemes, subsidies, and support tailored for farmers.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
 
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Crop Insurance</div>
-            <p className="card-text">Protect your crops against natural disasters, weather risks, and unexpected losses through insurance coverage.</p>
-            <button>Learn More</button>
+            <img src={assets.card20} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Crop Insurance</h5>
+             <p className="card-text">Protect your harvest from risks and disasters.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
 
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Weather Updates</div>
-            <p className="card-text">Get real-time weather forecasts, rainfall alerts, and seasonal updates to plan farming activities effectively.</p>
-            <button>Learn More</button>
+            <img src={assets.card21} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Weather Updates</h5>
+             <p className="card-text">Real-time weather alerts for smarter farming.</p>
+             <button>Learn More</button>
+            </div>
           </div>
         </div>
 
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Market Price Information</div>
-            <p className="card-text">Stay informed about the latest crop market prices, trends, and trading opportunities across regions.</p>
+            <img src={assets.card22} className="card-img-top" alt="" />
+
+            <div className="card-body">
+            <h5 className="card-title">Market Price Information</h5>
+            <p className="card-text">Access real-time crop prices and agricultural market trends.</p>
             <button>Learn More</button>
+            </div>
           </div>
         </div>
-
+      
+      </>
+    )}
 
 
 
 
 
  
-      {/* -----------------------------Agriculture Cards-------------------------- */}
+      {/* -----------------------------Transport Cards-------------------------- */}
 
-
+    {(activeFilter === "all" || activeFilter === "transport") && (
+      <>
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Driving License</div>
-            <p className="card-text">Apply for a new driving license, renew existing licenses, and access driving-related services online.</p>
+            <img src={assets.card23} className="card-img-top" alt="" />
+
+            <div className="card-body">
+            <h5  className="card-title">Driving License</h5>
+            <p className="card-text">Apply for, renew, and manage your driving license online.</p>
             <button>Learn More</button>
+            </div>
           </div>
         </div>
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Vehicle Registration</div>
-            <p className="card-text">Register new vehicles, update ownership details, and manage vehicle registration records easily.</p>
+            <img src={assets.card24} className="card-img-top" alt="" />
+
+            <div className="card-body">
+            <h5  className="card-title">Vehicle Registration</h5>
+            <p className="card-text">Register vehicles and manage ownership records effortlessly.</p>
             <button>Learn More</button>
+            </div>
           </div>
         </div>
 
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Traffic Challans</div>
-            <p className="card-text">Check, track, and pay traffic violation fines securely through the online portal.</p>
+            <img src={assets.card25} className="card-img-top" alt="" />
+
+            <div className="card-body">
+            <h5  className="card-title">Traffic Challans</h5>
+            <p className="card-text">Check and pay traffic challans quickly and securely.</p>
             <button>Learn More</button>
+            </div>
           </div>
         </div>
          
         <div className="col-md-3">
           <div className="card">
-            <img src=".." className="card-img-top" alt="" />
-            <div className="card-title">Road Tax</div>
-            <p className="card-text">Pay road taxes, view tax details, and manage vehicle tax compliance conveniently.</p>
+            <img src={assets.card26} className="card-img-top" alt="" />
+
+            <div className="card-body">
+            <h5  className="card-title">Road Tax</h5>
+            <p className="card-text">Pay vehicle taxes and manage compliance effortlessly.</p>
             <button>Learn More</button>
+            </div>
           </div>
         </div>
         
-          
+      </>
+    )}  
        
 
 
@@ -341,27 +452,6 @@ const Services = () => {
           
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
