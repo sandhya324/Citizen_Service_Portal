@@ -1,7 +1,5 @@
 import logo from './logo.png';
-
 import header from './header_img.png'
-
 import heroImg from './hero_img.png';
 
 
@@ -44,11 +42,11 @@ import card18 from './card_18.png'
 import card19 from './card_19.png'
 import card20 from './card_20.png'
 import card21 from './card_21.png'
-// import card22 from './card_22.png'
-// import card23 from './card_23.png'
-// import card24 from './card_24.png'
-// import card25 from './card_25.png'
-// import card26 from './card_26.png'
+import card22 from './card_22.png'
+import card23 from './card_23.png'
+import card24 from './card_24.png'
+import card25 from './card_25.png'
+import card26 from './card_26.png'
 
 
 
@@ -96,11 +94,11 @@ export const assets ={
     card19,
     card20,
     card21,
-    // card22,
-    // card23,
-    // card24,
-    // card25,
-    // card26
+    card22,
+    card23,
+    card24,
+    card25,
+    card26
 
 
 }

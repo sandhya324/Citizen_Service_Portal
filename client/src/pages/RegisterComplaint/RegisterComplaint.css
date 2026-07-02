@@ -1,0 +1,103 @@
+
+ /* ---------------------------------------------------------------------service Header------------------------------------------------------------------------------------------- */
+
+
+.register{
+    text-align: center;
+    padding: 30px 20px;
+}
+.header-text{
+    line-height: 1;
+}
+.header-text h1{
+    color:  #0B3B39;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.header-text p{
+    color: #4A5568;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------------------Register Form------------------------------------------------------------------------------------------- */
+
+.form-container {
+    background: #eefcf8;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.card-1{
+    flex: 3;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px; 
+}
+
+.form-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #0F766E;
+    margin-bottom: 25px; 
+}
+
+.reg-icon{
+    width: 45px;
+    height: 45px;
+    color: white;
+    margin-right: 8px;
+    background-color: #0F766E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(15, 118, 110, 0.25);
+    font-size: 24px;
+    flex-shrink: 0; /* Don't shrink */
+}
+
+
+.right-side {
+    width: 30%;
+    margin: 25px 25px 25px 0px;
+}
+.right-side .card-2{
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.card-2 h4{
+    color: #0F766E;
+    font-weight: 600;
+}
+.guide-icon{
+    width: 30px;
+    color: white;
+    background-color: #0F766E;
+    border-radius: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+.right-side .card-3{
+    border: 1px solid #E5E7EB;
+    padding: 25px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
