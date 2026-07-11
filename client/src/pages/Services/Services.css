@@ -1,4 +1,11 @@
 .our-services{
+    background: linear-gradient(
+       135deg,
+     #F8FBFF 0%,
+     #F1F7FF 40%,
+     #EEF8F5 100%
+    );
+    
     padding: 50px;
 }
 

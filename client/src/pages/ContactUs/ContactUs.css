@@ -1,0 +1,52 @@
+/* ---------------------------------------------------------------------Contact Header------------------------------------------------------------------------------------------- */
+.Contact-us{
+    background: linear-gradient(
+       135deg,
+     #F8FBFF 0%,
+     #F1F7FF 40%,
+     #EEF8F5 100%
+    );
+
+    padding-bottom: 20px;
+}
+
+
+.contact-header{
+    text-align: center;
+    padding: 50px;
+}
+.contact-header h2{
+    color: #0B3B39;
+    font-weight: 600;
+}
+
+.contact-header p{
+    width: 50%;
+    margin: auto;
+    color: #4A5568;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
