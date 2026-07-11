@@ -1,0 +1,221 @@
+/* ---------------------------------------------------------------------Track Header------------------------------------------------------------------------------------------- */
+.Track-status{
+    background: linear-gradient(
+       135deg,
+     #F8FBFF 0%,
+     #F1F7FF 40%,
+     #EEF8F5 100%
+    );
+
+    padding-bottom: 20px;
+}
+
+.track-header{
+    display: flex;
+    align-items: center;
+}
+
+.track-header .left-text{
+    padding: 30px;
+    width: 55%;
+    text-align: center;
+}
+
+.track-header .left-text h2{
+    color: #0B3B39;
+    font-weight: 600;
+}
+
+.track-header .left-text p{
+    color: #4A5568;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.right-illustration img{ 
+    width: 450px;
+}
+
+
+
+
+/* ---------------------------------------------------------------------Track input part------------------------------------------------------------------------------------------- */
+
+
+.card-track{
+    padding: 50px;
+    text-align: center;
+    /* margin-top: 30px; */
+    background-color:white;
+    width: 90%;
+    margin: 30px auto;  /* Centers the card horizontally */
+    border:1px solid #CBD5E1;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border-radius: 8px;
+}
+
+.card-header h4{
+   color: #0B3B39;
+   font-weight: 600;
+   margin-bottom: 0;
+}
+.card-header p{
+    color: #4A5568;
+    font-size: 15px;
+}
+.search-input{
+    display: flex;
+    padding: 12px;
+    justify-content: center;   /* Centers horizontally */
+    align-items: center;       /* Centers vertically */
+    gap: 15px;                 /* Space between input and button */
+}
+.track-input{
+    width: 500px;
+    padding: 6px 15px;
+    text-align: center;
+    border: 1px solid #0B3B39;
+    border-radius: 8px;
+}
+.track-btn{
+    background-color: #0B3B39;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 15px;
+}
+.track-btn-icon{
+    font-size: 15px;
+}
+.track-btn:hover{
+    background-color: #0F766E;
+    cursor: pointer;
+}
+
+.horizon-line{
+    padding-top: 0px;
+}
+
+.search-mobile .track-mobile{
+    width: 350px;
+    padding: 6px 15px;
+    border: 1px solid #0B3B39;
+    border-radius: 8px;
+    text-align: center;
+    color: #0B3B39;
+    font-weight: 600;
+    background-color: white;
+}
+.search-mobile .track-mobile:hover{
+    background-color: #0F766E;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------Frequently QA part------------------------------------------------------------------------------------------- */
+.Faq-container{
+    display: flex;
+}
+.FAQ-card{
+    padding: 30px;
+    background-color:white;
+    width: 90%;
+    margin: 50px auto;  /* Centers the card horizontally */
+    border:1px solid #CBD5E1;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border-radius: 8px;
+}
+
+.faq-head{
+    color: #0B3B39;
+    font-weight: 600;
+}
+.faq-left{
+    margin-top: 10px;
+    width: 70%;
+    border: 1px seagreen;
+}
+.faq-img img{
+    width: 380px;
+}
+
+.faq-mark{
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #E6F7F5;   /* Light theme color */
+    color: #0B3B39;              /* Your primary color */
+
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+    border: 1px solid #BDEAE4;
+}
+.accordion-item{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    margin-bottom:15px;
+    overflow:hidden;
+}.faq-left-content{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.faq-icon{
+    font-size: 18px;
+}
+
+.accordion-btn{
+    width:100%;
+    background:#fff;
+    border:none;
+    padding:18px 20px;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:16px;
+    font-weight:600;
+    color:#0B3B39;
+}
+
+.accordion-btn span{
+    font-size: 18px;
+    /* color: #0F766E; */
+}
+
+.accordion-btn:hover{
+    background:#f8fafc;
+}
+
+.accordion-content{
+    padding:18px 20px;
+    border-top:1px solid #e5e7eb;
+    color:#555;
+    line-height:1.7;
+    background:#fff;
+}

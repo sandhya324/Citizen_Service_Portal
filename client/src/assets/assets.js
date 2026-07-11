@@ -48,7 +48,9 @@ import card24 from './card_24.png'
 import card25 from './card_25.png'
 import card26 from './card_26.png'
 
+import status from './status.png'
 
+import faq from './faq.png'
 
 export const assets ={
     logo,
@@ -98,7 +100,9 @@ export const assets ={
     card23,
     card24,
     card25,
-    card26
+    card26,
 
+    status,
 
+    faq
 }

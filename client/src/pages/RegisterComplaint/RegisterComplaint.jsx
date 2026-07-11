@@ -1,5 +1,5 @@
 import './RegisterComplaint.css'
-import {FaClipboardList, FaHeadset, FaInfoCircle} from 'react-icons/fa';
+import {FaClipboardList, FaHeadset, FaInfoCircle, FaUser, FaEnvelope, FaPhone, FaMapMarkerAlt, FaTags, FaPen, FaPaperclip } from 'react-icons/fa';
 
 const RegisterComplaint = () => {
   return (
@@ -29,27 +29,26 @@ const RegisterComplaint = () => {
        
 
     <div className="form-container">
-    
-
+  
 
         {/* Left Side Form */}
 
-          <div className="card-1 shadow-lg">
+          <div className="card-1">
             <h3 className="form-title"><span className='reg-icon'><FaClipboardList /></span> Complaint Details</h3>
-
+                       
             <form>
 
               {/* Row 1 */}
                <div className="row">
 
                 <div className="col">
-                  <label className="form-label">Full Name</label>
-                  <input type="text" className="form-control" placeholder="Enter your full name"/>
+                  <label className="input-label"><FaUser className="input-icon" />Full Name <span className="required">*</span></label>
+                  <input type="text" className="custom-input" placeholder="Enter your full name"/>
                 </div>
 
                 <div className="col">
-                  <label className="form-label">Email Address</label>
-                  <input type="email" className="form-control" placeholder="example@gmail.com" />
+                  <label className="input-label"><FaEnvelope className="input-icon" />Email Address<span className="required">*</span></label>
+                  <input type="email" className="custom-input" placeholder="Enter your email address"/>
                 </div>
 
               </div>
@@ -61,13 +60,15 @@ const RegisterComplaint = () => {
               <div className="row">
 
                 <div className="col">
-                  <label className="form-label">Mobile Number</label>
-                  <input type="tel" className="form-control" placeholder="+91" />  
+                  <label className="input-label"><FaPhone className="input-icon" />Mobile Number<span className="required">*</span></label>
+                  <input type="tel" className="custom-input" placeholder="+91"/>
                 </div>
 
+              
+
                 <div className="col">
-                  <label className="form-label">District</label>
-                  <select className="form-select">
+                  <label className="input-label"><FaMapMarkerAlt className="input-icon" />District</label>
+                  <select className="custom-input">
                     <option>Select District</option>
                     <option>Dehradun</option>
                     <option>Haridwar</option>
@@ -91,8 +92,8 @@ const RegisterComplaint = () => {
               {/* Row 3 */}
 
               <div className="col">
-                <label className="form-label">Complaint Category</label>
-                <select className="form-select">
+                <label className="input-label"><FaTags className="input-icon" />Complaint Category</label>
+                <select className="custom-input">
                   <option>Select Category</option>
                   <option>Identity & Documents</option>
                   <option>Education</option>
@@ -106,49 +107,28 @@ const RegisterComplaint = () => {
 
 
               {/* Subject */}
-              <div className="col">
-                <label className="form-label">Subject</label>
-                <input type="text" className="form-control" placeholder="Enter complaint subject" />
+              <div className="col ">
+                <label className="input-label"><FaPen className="input-icon" />Subject</label>
+                <input type="text" className="custom-input" placeholder="Enter complaint subject" />
               </div>
 
 
               {/* Description */}
               <div className="col">
-                <label className="form-label">Complaint Description</label>
-                <textarea rows="5" className="form-control" placeholder="Describe your issue..."></textarea>
+                <label className="input-label"><FaClipboardList className="input-icon" />Complaint Description</label>
+                <textarea rows="4" className="custom-input" placeholder="Describe your issue..."></textarea>
               </div>
 
 
-
-
-              {/* Priority */}
-
-              <div className="col">
-                <label>Priority</label>
-
-                <div className="form-check">
-                  <input className="check-input" type="radio" name="priority" />
-                  <label className="form-check-label">Low</label>
-                </div>
-
-                <div className="form-check">
-                  <input className="check-input" type="radio" name="priority" />
-                  <label className="form-check-label">Medium</label>
-                </div>
-
-                <div className="form-check">
-                  <input className="check-input" type="radio" name="priority" />
-                  <label className="form-check-label">High</label>
-                </div>
-              </div>
 
 
               {/* File Upload */}
 
               <div className="col">
-                 <label>Upload Evidence</label>
-                 <input type="file" className="form-control"/>
+                 <label><FaPaperclip className="input-icon" /> Upload Evidence</label>
+                 <input type="file" className="custom-input"/>
               </div>
+
 
 
               {/* Button */}
@@ -161,10 +141,10 @@ const RegisterComplaint = () => {
 
 
            {/* Right Side */}
-      <div className="right-side"> 
-        <div className="card-2 shadow-lg">
+  
+        <div className="card-2">
 
-            <h4><i className='guide-icon'><FaInfoCircle/></i>Complaint Guidelines</h4>
+            <h4><span className='guide-icon'><FaInfoCircle/></span>Complaint Guidelines</h4>
 
             <ul className="list-group list-group-flush">
               <li className="list-group-item">Provide accurate and complete details.</li>
@@ -173,25 +153,12 @@ const RegisterComplaint = () => {
               <li className="list-group-item">Save your Complaint ID after submission.</li>
               <li className="list-group-item">Track your complaint using the Complaint ID.</li>
               <li className="list-group-item">Keep your contact information up to date.</li>
+              <li className="list-group-item">False or misleading complaints may be rejected.</li>
+              <li className="list-group-item">Keep your contact information updated for timely communication.</li>
+              <li className="list-group-item">Allow sufficient time for complaint verification and processing.</li>          
             </ul>
 
           </div>
-
-          <div className="card-3 shadow-lg">
-             <h4 className="need-help">Need Help?</h4>
-             <FaHeadset className="need-help-icon" />
-
-             <p>If you experience any issues while submitting your complaint, our support team is here to help.</p>
-             <ul>
-              <li>1800-123-4567</li>
-              <li>support@citizenportal.gov.in</li>
-              <li>Monday – Saturday, 9:00 AM – 6:00 PM</li>
-             </ul>
-          </div>
-
-
-
-    </div>
   </div>
 
 
