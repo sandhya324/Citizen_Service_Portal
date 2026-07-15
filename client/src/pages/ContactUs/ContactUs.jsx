@@ -1,4 +1,5 @@
 import './ContactUs.css'
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa'
 
 const ContactUs = () => {
   return (
@@ -23,33 +24,37 @@ const ContactUs = () => {
            <h4>Get in Touch</h4>
            
            <div className="address">
-             <span className="add-icon"> </span>
+             <span className="add-icon"><FaMapMarkerAlt /></span>
              <p><b>Office Address</b><br />Citizen Service Portal <br/>Government Office Complex<br/>New Delhi, India - 110001</p>
            </div>
 
            <div className="address">
-             <span className="add-icon"> </span>
+             <span className="add-icon"><FaPhoneAlt /></span>
              <p><b>Helpline Number</b><br />1800-123-456 <br/>(Toll Free)</p>
            </div>
 
            <div className="address">
-             <span className="add-icon"> </span>
+             <span className="add-icon"><FaEnvelope /></span>
              <p><b>Email Address</b><br />support@citizenportal.gov.in </p>
            </div>
 
            <div className="address">
-             <span className="add-icon"> </span>
+             <span className="add-icon"><FaClock /></span>
              <p><b>Working Hours</b><br />Monday - Friday <br/>9:00 Am - 6:00 PM</p>
            </div>
-
            
       </div>
+
+
+
 
 
       <div className="contact-form">
         <form>
 
-          <div className="contact-form">
+          <div className="form-info">
+
+            <h4>Send us a Message</h4>
 
             <div className="col">
                 <label className="input-label">Full Name </label>
@@ -89,7 +94,29 @@ const ContactUs = () => {
 
 
 
+       
+{ /* --------------------------------------------------------------------- Location Map ------------------------------------------------------------------------------------------- */}
+   
+     <div className="location-map">
 
+      <div className="left-add">
+         <div className="loc-title">
+           <span className='map-icon'><FaMapMarkerAlt/></span>
+           <h5>Our Office Location</h5>
+         </div>
+
+         <p className='subtitle'>Visit our office for any assistance.</p>
+         <p>Citizen Service Poratal <br/>Government Office Complex <br />New Delhi, India - 110001</p>
+      </div>
+
+
+
+
+      <div className="loc-map">
+           
+      </div>
+
+     </div>
 
 
 

@@ -7,7 +7,7 @@
      #EEF8F5 100%
     );
 
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 
@@ -28,6 +28,68 @@
     font-weight: 400;
 }
 
+.contact-part-1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-info,
+.contact-form{
+    width: 500px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(11, 59, 57, 0.08);
+}
+
+.contact-form{
+    width: 600px;
+}
+.address{
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #D7EAF2;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 15px 0;
+    background: #fff;
+    gap: 10px;
+}
+
+.address .add-icon{
+    width: 90px;
+    background: #E6F7F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0B3B39;
+    font-size: 28px;
+}
+.address span{
+    text-align: center;
+}
+.address  b{
+    color: #0B3B39;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.address  p{
+    color: #4A5568;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.contact-part-1 h4{
+    font-weight: 600;
+    color: #0B3B39;
+    padding-bottom: 20px;
+}
+
+.form-info .col{
+   padding-bottom: 20px;
+}
 
 
 
@@ -37,16 +99,18 @@
 
 
 
+/* -------------------------------------------------------------------- Location Map ----------------------------------------------------------------------------------------- */
 
+.location-map{
+    width:83%;
+    padding: 30px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(11, 59, 57, 0.08);
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.loc-title{
+    display: flex;
+    gap: 10px;
+}

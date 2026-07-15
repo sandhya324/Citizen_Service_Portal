@@ -1,4 +1,3 @@
-import React from 'react'
 import { assets } from '/src/assets/assets.js'
 import './Home.css'
 import { FiUserPlus, FiFileText, FiClipboard, FiCheckCircle} from "react-icons/fi";
