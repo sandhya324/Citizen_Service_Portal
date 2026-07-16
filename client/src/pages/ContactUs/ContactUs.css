@@ -103,14 +103,54 @@
 
 .location-map{
     width:83%;
+    display: flex;
+    gap: 40px;
     padding: 30px;
     margin: 30px auto;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(11, 59, 57, 0.08);
 }
+.left-add{
+     padding: 10px;
+}
 
 .loc-title{
     display: flex;
-    gap: 10px;
+    align-items: center;   /* Vertical alignment */
+    gap: 10px;             /* Space between icon and text */
+}
+.map-icon{
+    color: #0B3B39;
+    font-size: 25px;
+}
+.loc-title h5{
+    margin: 0;             /* Remove default h5 margin */
+    color: #0B3B39;
+    font-weight: 600;
+}
+.subtitle{
+    padding-top: 25px;
+    color: #4A5568;
+}
+
+.sub-add{
+    padding-top: 0px;
+    color: #0B3B39;
+    font-weight: 600;
+}
+.map-btn{
+    color: #fff;
+    background-color: #0B3B39;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+.map-btn:hover{
+    background-color: #247976;
+}
+.map-btn span{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
 }

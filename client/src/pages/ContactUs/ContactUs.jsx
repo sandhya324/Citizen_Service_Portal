@@ -1,5 +1,6 @@
 import './ContactUs.css'
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa'
+import { FiExternalLink } from "react-icons/fi";
 
 const ContactUs = () => {
   return (
@@ -106,14 +107,15 @@ const ContactUs = () => {
          </div>
 
          <p className='subtitle'>Visit our office for any assistance.</p>
-         <p>Citizen Service Poratal <br/>Government Office Complex <br />New Delhi, India - 110001</p>
+         <p className='sub-add'>Citizen Service Poratal <br/>Government Office Complex <br />New Delhi, India - 110001</p>
+      
+         <button className='map-btn'>View on Google Map <span><FiExternalLink /></span></button>
+
       </div>
 
 
-
-
       <div className="loc-map">
-           
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5714334.612218336!2d75.17250453317214!3d29.590137939153575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1784182493228!5m2!1sen!2sin" width="750" height="280" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>        
       </div>
 
      </div>

@@ -3,7 +3,7 @@ import {FaClipboardList, FaHeadset, FaInfoCircle, FaUser, FaEnvelope, FaPhone, F
 
 const RegisterComplaint = () => {
   return (
-  <div>
+  <div className='register-page'>
 
 
   { /* ---------------------------------------------------------------------service Header------------------------------------------------------------------------------------------- */}
