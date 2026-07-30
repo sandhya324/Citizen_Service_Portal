@@ -41,10 +41,10 @@ const Navbar = ({ setShowLogin }) => {
 
         <li>
           <NavLink
-            to="/registercomplaint"
+            to="/AboutUs"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            Register Complaint
+            About Us
           </NavLink>
         </li>
 
@@ -53,7 +53,7 @@ const Navbar = ({ setShowLogin }) => {
             to="/trackstatus"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            Track Status
+            Track Application
           </NavLink>
         </li>
 
@@ -68,7 +68,7 @@ const Navbar = ({ setShowLogin }) => {
       </ul>
 
       <div className="navbar-right">
-        <button onClick={() => setShowLogin(true)}>Sign Up</button>
+        <button onClick={() => setShowLogin(true)}>Register</button>
       </div>
     </div>
 

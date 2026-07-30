@@ -70,24 +70,23 @@
     gap: 20px;
     list-style: none;
 }
+
 .navbar-right button{
     cursor: pointer;
-    font-size: 18px;
-    background-color: #0F766E;
-    color: #E2E8F0;
-    border-radius: 8px;
-    padding: 3px 13px;
-    border: 1px solid rgba(255,255,255,0.3);
-    transition: all 0.3s ease;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 600;
 
-}
-.navbar-links li a{
-    text-decoration: none;
-    color: #E2E8F0;
+    color: #ffffff;
+    background: #0F766E;
+
+    border: none;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
 }
 
 .navbar-right button:hover{
-    background-color: #1a9b90;
+    background: #159A8C;
+    transform: translateY(-2px);
 }
-
-

@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './Login.css'
 
 const Login = ({setShowLogin}) => {
 
-  const [currState, setCurrState] = useState("Login")
+  const [currState, setCurrState] = useState("Register")
 
   return (
     
@@ -21,7 +21,7 @@ const Login = ({setShowLogin}) => {
             <input type="password" placeholder='Password' required />
           </div>
 
-          <button>{currState==="Sign Up"?"Create an account":"Login"}</button>
+          <button>{currState==="Register"?"Create an account":"Login"}</button>
 
 
 
@@ -33,7 +33,7 @@ const Login = ({setShowLogin}) => {
 
 
           {currState==="Login"?
-          <p>Create a new account? <span onClick={()=>setCurrState("Sign Up")}>Click here</span></p>: 
+          <p>Create a new account? <span onClick={()=>setCurrState("Register")}>Click here</span></p>: 
           <p>Aready have an account? <span onClick={()=>setCurrState("Login")}>Login here</span></p>}
         
 

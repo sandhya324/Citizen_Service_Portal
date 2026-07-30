@@ -50,6 +50,12 @@ import card26 from './card_26.png'
 
 import status from './status.png'
 import faq from './faq.png'
+import abouthead from './about-head.png'
+import aboutus from './about.png'
+
+import mission from './mission.png'
+import vision from './vision.png'
+import chooseUs from './chooseUs.png'
 
 
 export const assets ={
@@ -103,5 +109,11 @@ export const assets ={
     card26,
 
     status,
-    faq
+    faq,
+    abouthead,
+    aboutus,
+
+    mission,
+    vision,
+    chooseUs
 }

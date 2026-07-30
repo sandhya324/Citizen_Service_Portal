@@ -1,0 +1,357 @@
+/* ---------------------------------------------------------------------About Us Header------------------------------------------------------------------------------------------- */
+
+
+.aboutUs-back{
+    background: linear-gradient(
+       135deg,
+     #F8FBFF 0%,
+     #F1F7FF 40%,
+     #EEF8F5 100%
+    );
+
+    padding-bottom: 30px;
+}
+
+
+.about-us{
+    border-top: 1px solid #c4e2da;
+}
+
+.about-us h2{
+   padding-top: 35px;
+   padding-bottom: 20px;
+   color: #0B3B39;
+   font-weight: 600;
+   text-align: center;
+}
+.about-us .about-text{
+    color: #4A5568;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.img-who img{
+    height: 500px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------- Who We Are ------------------------------------------------------------------------------------------- */
+.mission-vis{
+    padding: 30px;
+}
+
+.header-text{
+    padding: 30px 0px ;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.header-text h3{
+    color: #0B3B39;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.header-text .mission-sub{
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+.cards-misvis{
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.our-mission{
+    display: flex;
+    justify-content: center;
+    border: 1px  solid #ddf1ec;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0px 30px;
+}
+.mission-img img{
+    width: 100%;
+    max-width: 780px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.mis-right{
+    padding: 40px 50px;
+}
+.mis-right h4{
+    color: #0B3B39;
+    width: 145px;
+    font-weight: 600;
+    border-bottom: 1px  solid #ddf1ec;
+}
+.mission-sub{
+    color: #0B6E4F;
+    font-weight: 600;
+    padding-top: 18px;
+}
+.mis-right p{
+    color: #4A5568;
+    font-size: 16px;
+}
+
+
+
+
+
+
+.our-vision{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    border: 1px  solid #ddf1ec;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.vision-img img{
+    width: 100%;
+    max-width: 780px;
+    height: auto;
+    border-radius: 8px;
+}
+.vision-img{
+    padding: 40px 50px;
+}
+
+.vis-left h4{
+    color: #0B3B39;
+    width: 145px;
+    font-weight: 600;
+    border-bottom: 1px  solid #ddf1ec;
+}
+.vision-sub{
+    color: #0B6E4F;
+    font-weight: 600;
+    padding-top: 18px;
+}
+.vis-left p{
+    color: #4A5568;
+    font-size: 16px;
+}
+
+
+.statis{
+    display: flex;
+    gap: 16px;
+    padding: 15px 0px;
+}
+.statis li{
+    list-style: none;
+}
+
+.s-text{
+    text-align: center;
+}
+.s-text h5{
+    font-size: 16px;
+    color: #0B3B39;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.s-text p{
+    color: #4A5568;
+    font-size: 12px;
+    padding-top: 0px;
+    width: 130px;
+}
+
+.value-circle{
+    width: 50px;
+    height: 50px;
+    background: #ddf1ec;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+
+}
+.value-icon {
+  font-size: 25px;
+  color: #0B6E4F;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------Why Choose Our Portal? -------------------------------------------------------------------------------------------- */
+
+.why-choose{
+    padding: 0px 30px;
+}
+
+.choose-port{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ddf1ec;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.port-img{
+    padding: 40px 50px;
+}
+.port-img img{
+    width: 500px;
+    border-radius: 8px;
+}
+
+.port-text h5{
+    color: #0B3B39;
+    width: 200px;
+    font-weight: 600;
+    border-bottom: 1px  solid #ddf1ec;
+    margin-bottom: 20px;
+}
+.port-list li{
+   list-style: none;
+   padding: 5px 0px;
+   font-size: 16px;
+
+}
+
+.port-list li b{
+    color: #0B6E4F;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------ Call to Action ------------------------------------------------------------------------------ */
+
+.call-action{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    padding: 25px 35px;
+    margin: 40px 30px;
+
+    background: #0B3B39;
+    border-radius: 12px;
+    
+}
+
+.action-left{
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    flex: 1;
+}
+
+
+
+.action-icon{
+
+    width: 80px;
+    height: 80px;
+
+    min-width: 80px;
+
+    border-radius: 50%;
+    background: #ddf1ec;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-icon{
+  font-size: 32px;   /* Increase size */
+  font-weight: 700;  /* Doesn't affect most SVG icons */
+  color: #0B6E4F;
+}
+
+.action-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.action-text h5{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.action-text p{
+    color: #D7E8E6;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+
+.action-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-btn{
+    padding: 14px 30px;
+
+    background: #0F766E;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.action-btn:hover{
+    background: #159A8C;
+    transform: translateY(-2px);
+}
