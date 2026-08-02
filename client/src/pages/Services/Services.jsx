@@ -59,7 +59,7 @@ const Services = () => {
       
       {(activeFilter === "all" || activeFilter === "identity") && (
        <>
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card1} className="card-img-top" alt="" />
 
@@ -71,7 +71,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card2} className="card-img-top" alt="" />
 
@@ -83,7 +83,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card3} className="card-img-top" alt="" />
             
@@ -95,7 +95,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card4} className="card-img-top" alt="" />
 
@@ -119,7 +119,7 @@ const Services = () => {
 
       {(activeFilter === "all" || activeFilter === "education") && (
        <>
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card5} className="card-img-top" alt="" />
 
@@ -131,7 +131,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card6} className="card-img-top" alt="" />
 
@@ -143,7 +143,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card7} className="card-img-top" alt="" />
 
@@ -167,7 +167,7 @@ const Services = () => {
     {(activeFilter === "all" || activeFilter === "health") && (
       <>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card8} className="card-img-top" alt="" />
 
@@ -179,7 +179,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card9} className="card-img-top" alt="" />
 
@@ -191,7 +191,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card10} className="card-img-top" alt="" />
 
@@ -203,7 +203,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card11} className="card-img-top" alt="" />
 
@@ -224,7 +224,7 @@ const Services = () => {
     {(activeFilter === "all" || activeFilter === "employment") && (
       <>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card12} className="card-img-top" alt="" />
 
@@ -237,7 +237,7 @@ const Services = () => {
         </div>
 
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card13} className="card-img-top" alt="" />
 
@@ -250,7 +250,7 @@ const Services = () => {
         </div>
 
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card14} className="card-img-top" alt="" />
 
@@ -262,7 +262,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card15} className="card-img-top" alt="" />
 
@@ -282,7 +282,7 @@ const Services = () => {
 
     {(activeFilter === "all" || activeFilter === "housing") && (
       <>
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card16} className="card-img-top" alt="" />
 
@@ -295,7 +295,7 @@ const Services = () => {
         </div>
 
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card17} className="card-img-top" alt="" />
 
@@ -307,7 +307,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card18} className="card-img-top" alt="" />
 
@@ -331,7 +331,7 @@ const Services = () => {
     {(activeFilter === "all" || activeFilter === "agriculture") && (
       <>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card19} className="card-img-top" alt="" />
 
@@ -344,7 +344,7 @@ const Services = () => {
         </div>
 
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card20} className="card-img-top" alt="" />
 
@@ -357,7 +357,7 @@ const Services = () => {
         </div>
 
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card21} className="card-img-top" alt="" />
 
@@ -370,7 +370,7 @@ const Services = () => {
         </div>
 
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card22} className="card-img-top" alt="" />
 
@@ -395,7 +395,7 @@ const Services = () => {
     {(activeFilter === "all" || activeFilter === "transport") && (
       <>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card23} className="card-img-top" alt="" />
 
@@ -407,7 +407,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card24} className="card-img-top" alt="" />
 
@@ -419,7 +419,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card25} className="card-img-top" alt="" />
 
@@ -431,7 +431,7 @@ const Services = () => {
           </div>
         </div>
          
-        <div className="col-md-3">
+        <div className="col-12 col-sm-6 col-lg-3">
           <div className="card">
             <img src={assets.card26} className="card-img-top" alt="" />
 

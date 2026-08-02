@@ -1,14 +1,22 @@
+import { useState } from "react";
 import "./Navbar.css";
+
 import { assets } from "/src/assets/assets.js";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 import { NavLink } from "react-router-dom";
 
+
+
 const Navbar = ({ setShowLogin }) => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
 
 
 
     <div className="navbar">
-
       <div className="navbar-left">
         <img src={assets.logo} alt="Logo" />
 
@@ -19,7 +27,8 @@ const Navbar = ({ setShowLogin }) => {
       </div>
 
 
-      <ul className="navbar-links">
+    
+      <ul className={`navbar-links ${menuOpen ? "active-menu" : ""}`}>
         <li>
           <NavLink
             to="/"
@@ -65,11 +74,23 @@ const Navbar = ({ setShowLogin }) => {
             Contact Us
           </NavLink>
         </li>
+
+        <li className="mobile-register">
+            <button onClick={() => setShowLogin(true)}>Register</button>
+        </li>
       </ul>
 
-      <div className="navbar-right">
-        <button onClick={() => setShowLogin(true)}>Register</button>
+      
+
+
+
+      <div
+        className="menu-icon"
+        onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
       </div>
+
+
     </div>
 
 

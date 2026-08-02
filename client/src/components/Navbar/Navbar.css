@@ -50,43 +50,152 @@
     padding-top: 7px;
     display: flex;
     cursor: pointer;
+    align-items: center;
     gap: 30px;
     list-style: none;
     color: #E2E8F0;
     font-size: 18px;
 }
 .navbar .navbar-links .active{
-    /* padding-bottom: 2px; */
     border-bottom: 1px solid #14B8A6;
 }
 
-
-.navbar-right{
-    position: relative;
-    z-index: 10;
-    padding-right: 50px;
-    display:flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
+.menu-icon{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+.mobile-register{
+    margin-left: 140px;
+    display:block;
+    list-style:none;
 }
 
-.navbar-right button{
-    cursor: pointer;
-    padding: 10px 24px;
-    font-size: 16px;
-    font-weight: 600;
-
-    color: #ffffff;
-    background: #0F766E;
-
-    border: none;
-    border-radius: 10px;
-
-    transition: all 0.3s ease;
+.mobile-register button{
+    padding: 10px 22px;
+    background:#0F766E;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
 }
 
-.navbar-right button:hover{
-    background: #159A8C;
-    transform: translateY(-2px);
+
+
+
+
+/* ------------------------------------------------Media quaries ------------------------------------------------ */
+@media (max-width: 1110px){
+    .mobile-register{
+       margin-left: 80px;
+    }
+}
+@media(max-width: 1100px){
+    .mobile-register{
+        margin-left: 50px;
+    }
+}
+@media (max-width:1080px) {
+    .navbar-links{
+        gap:20px;
+        font-size:16px;
+    }
+
+    .navbar-right{
+        gap:15px;
+        padding-right:20px;
+    }
+
+    .navbar-right button{
+        padding:8px 18px;
+        font-size:15px;
+    }
+    .mobile-register button{
+       padding:8px 16px;
+       font-size:16px;
+    }
+}
+
+
+@media (max-width:960px){
+
+    .navbar{
+        padding:10px;
+    }
+
+    .navbar img{
+        width:50px;
+        height:50px;
+    }
+
+    .logo-text p{
+        font-size:18px;
+    }
+
+    .logo-text span{
+        font-size:12px;
+    }
+
+    .navbar-links{
+        gap:15px;
+        font-size:15px;
+        padding-right:10px;
+    }
+
+    .navbar-right{
+        gap:10px;
+        padding-right:10px;
+    }
+
+    .navbar-right button{
+        padding:8px 14px;
+        font-size:14px;
+    }
+}
+
+
+@media (max-width:865px){
+    .mobile-register{
+       margin-left: 0px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    .menu-icon{
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        margin: 0 20px;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar-links.active-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #0B3B39;
+        padding: 20px 0;
+        gap: 20px;
+        text-align: center;
+        z-index: 100;
+    }
+
+    .navbar-right{
+        display:none;
+    }
 }

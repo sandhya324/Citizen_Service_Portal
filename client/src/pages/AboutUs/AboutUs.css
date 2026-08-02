@@ -75,32 +75,33 @@
 
 .cards-misvis{
     padding: 10px;
-    margin: 40px 0;
 }
 
 .our-mission{
     display: flex;
     justify-content: center;
+    gap: 20px;
     border: 1px  solid #ddf1ec;
     border-radius: 8px;
     align-items: center;
     padding: 0px 30px;
+    margin-bottom: 30px;
 }
 .mission-img img{
     width: 100%;
-    max-width: 780px;
     height: auto;
     border-radius: 8px;
+    margin: 30px 0;
 }
 
 .mis-right{
-    padding: 40px 50px;
+    padding: 20px;
 }
 .mis-right h4{
     color: #0B3B39;
-    width: 145px;
     font-weight: 600;
     border-bottom: 1px  solid #ddf1ec;
+    display: inline-block;
 }
 .mission-sub{
     color: #0B6E4F;
@@ -118,9 +119,9 @@
 
 
 .our-vision{
-    margin-top: 50px;
     display: flex;
     justify-content: center;
+    gap: 20px;
     border: 1px  solid #ddf1ec;
     border-radius: 8px;
     align-items: center;
@@ -129,19 +130,19 @@
 
 .vision-img img{
     width: 100%;
-    max-width: 780px;
     height: auto;
     border-radius: 8px;
+    margin: 30px 0;
 }
 .vision-img{
-    padding: 40px 50px;
+    padding: 20px;
 }
 
 .vis-left h4{
     color: #0B3B39;
-    width: 145px;
     font-weight: 600;
     border-bottom: 1px  solid #ddf1ec;
+    display: inline-block;
 }
 .vision-sub{
     color: #0B6E4F;
@@ -230,10 +231,10 @@
 
 .port-text h5{
     color: #0B3B39;
-    width: 200px;
+    display: inline-block;
     font-weight: 600;
     border-bottom: 1px  solid #ddf1ec;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 .port-list li{
    list-style: none;
@@ -355,3 +356,203 @@
     background: #159A8C;
     transform: translateY(-2px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------Media quaries ------------------------------------------------ */
+/* ---------------------- Who We Are ----------------------- */
+
+@media(max-width: 1100px){
+   .img-who img{
+      height: auto;
+      width: 100%;
+    }
+}
+
+
+
+
+/* ---------------------- Our Mission & Our Vision  ----------------------- */
+
+@media (max-width: 1250px) {
+
+    .our-mission,
+    .our-vision{
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .mission-img,
+    .vision-img{
+        width: 100%;
+        padding: 0;
+    }
+
+    .mission-img img,
+    .vision-img img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: block;
+    }
+
+    .mis-right,
+    .vis-left{
+        width: 100%;
+        padding: 0;
+    }
+
+    .statis{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* --------------------- Why Choose Our Portal? ------------------ */
+@media (max-width: 1150px){
+.port-img{
+    padding: 10px 20px;
+}
+.port-img img{
+    width: 400px;
+}
+
+.port-list li{
+   font-size: 15px;
+}
+}
+
+
+@media (max-width: 1050px){
+
+.choose-port{
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px; 
+}
+
+.port-img{
+    padding: 20px 50px;
+}
+.port-img img{
+    width: 100%;
+}
+.port-list li{
+   font-size: 16px;
+}
+}
+
+@media (max-width: 705px){
+.port-list li{
+   font-size: 14px;
+}
+}
+
+@media (max-width: 600px){
+.port-list li{
+   padding: 10px 0px;
+}}
+
+
+
+
+
+/* -------------------- Call to Action --------------------- */
+@media(max-width: 730px){
+.call-action{
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px; 
+}
+.action-btn{
+    padding: 14px 30px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+} }
+
+@media(max-width: 505px){
+.action-left{
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px; 
+}
+
+
+
+.action-icon{
+
+    width: 80px;
+    height: 80px;
+
+    min-width: 80px;
+
+    border-radius: 50%;
+    background: #ddf1ec;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-icon{
+  font-size: 32px;   /* Increase size */
+  font-weight: 700;  /* Doesn't affect most SVG icons */
+  color: #0B6E4F;
+}
+
+.action-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.action-text h5{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.action-text p{
+    color: #D7E8E6;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+
+.action-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+
+
+
+
+

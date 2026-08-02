@@ -15,7 +15,7 @@
 .service-head {
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .service-head h1{
   text-align: center;
@@ -30,7 +30,6 @@
   text-align: center;
   margin-top: 0;
 }
-
 .filter-btn.active{
     background-color: #0B3B39;
     color: white;
@@ -42,6 +41,9 @@
 
 .service-filters{
     padding: 20px 0px;
+}
+.service-filters button{
+    margin-top: 20px;
 }
 .filter-btn{
     padding: 5px 18px;
@@ -63,18 +65,16 @@
 
 /* -----------------------------------------------------------------------card section------------------------------------------------------------------------------------------ */
 
-.col-md-3 {
+.col-12 {
    padding-bottom: 25px;
 }
-.col-md-3 .card{
+.col-12 .card{
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border-radius: 25px;
 }
 .card .card-img-top{
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 25px 25px 0 0; 
 }
 .card .card-body{
     padding: 0px 15px 15px 15px;
@@ -82,8 +82,8 @@
     padding-bottom: 20px;
 }
 .card-body h5{
-    margin-top: 0;
-    margin-bottom: 8px;
+    margin-top: 15px;
+    margin-bottom: 3px;
     font-weight: 600;
     color: #0B3B39;
 }
@@ -102,3 +102,59 @@
     background-color:#0F766E;
     transform: perspective(1000px) scale(1.08);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------Media quaries ------------------------------------------------ */
+@media(max-width: 1120px){
+    
+.card .card-body{
+    margin: 0;
+    padding-bottom: 20px;
+}
+.card-body h5{
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #0B3B39;
+}
+.card-body p{
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+.card-body button{
+    width: 130px;
+    background-color: #0B3B39;
+    color: white;
+    padding: 9px 10px;
+    border-radius: 5px;
+    border-style: none;
+}
+.card-body button:hover{
+    background-color:#0F766E;
+    transform: perspective(1000px) scale(1.08);
+}
+
+}
+
+
+
+
+

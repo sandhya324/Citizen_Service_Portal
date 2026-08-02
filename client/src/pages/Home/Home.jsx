@@ -2,6 +2,9 @@ import { assets } from '/src/assets/assets.js'
 import './Home.css'
 import { FiUserPlus, FiFileText, FiClipboard, FiCheckCircle} from "react-icons/fi";
 
+import { FiArrowRight } from "react-icons/fi";
+import { Link } from 'react-router-dom';
+
 const Home = () => {
   return (
     <div>
@@ -31,10 +34,12 @@ const Home = () => {
     <div className="container">
       
       <div className="Hero-left">
-
+        
+        <div className="sub-hero">
            <h1>One Portal, <br/> Multiple </h1>
            <h1 style={{ color: '#0F766E' }}>Government Services</h1>
            <p>Access certificates, licenses, grievance redressal, and application tracking through a single platform.</p>
+        </div>
 
         <div className="hero-buttons">
            <button>Apply for Service</button>
@@ -94,88 +99,76 @@ const Home = () => {
        
  <div className="quick-services">
 
+
+
+
+
     <div className="service-text">
       <h2>Quick Access Services</h2>
       <p>Access essential government services quickly and securely.</p>
     </div>
+    
+    <Link to="/services" className="view-all-btn">
+      View All Services <FiArrowRight />
+    </Link>
 
 
-    <div className="services-acess py-5">
-    <div className="container">
+    <div className="home-services">  
+    
+     <div className="row g-4">
 
-    <div className="row g-4">
+        <div className="col-12 col-sm-6 col-lg-3">
+          <div className="card">
+            <img src={assets.card1} className="card-img-top" alt="" />
 
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.birth} className="card-img-top" alt="..." />
-          <h5>Birth Certificate</h5>
-          <p></p>
+              <div className="card-body">
+                 <h5 className="card-title">Birth Certificate</h5>
+                 <p className="card-text">Apply for, verify, and download official birth certificates online.</p>
+                 <button>Learn More <FiArrowRight /></button>
+              </div>
+          </div>
         </div>
-      </div>
 
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.income} className="card-img-top" alt="..." />
-          <h5>Income Certificate</h5>
-          <p></p>
+  
+        <div className="col-12 col-sm-6 col-lg-3">
+          <div className="card">
+            <img src={assets.card5} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Scholarship Application</h5>
+             <p className="card-text">Apply for government and educational scholarships with ease.</p>
+             <button>Learn More <FiArrowRight /></button>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.water} className="card-img-top" alt="..." />
-          <h5>Water Connection</h5>
-          <p></p>
+
+        <div className="col-12 col-sm-6 col-lg-3">
+          <div className="card">
+            <img src={assets.card10} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Ayushman Bharat Services</h5>
+             <p className="card-text">Access affordable healthcare benefits through Ayushman Bharat.</p>
+             <button>Learn More <FiArrowRight /></button>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.electricity} className="card-img-top" alt="..." />
-          <h5>Electricity Complaint</h5>
-          <p></p>
+        <div className="col-12 col-sm-6 col-lg-3">
+          <div className="card">
+            <img src={assets.card17} className="card-img-top" alt="" />
+
+            <div className="card-body">
+             <h5 className="card-title">Ration Card Services</h5>
+             <p className="card-text">Apply, update, and manage your ration card online.</p>
+             <button>Learn More <FiArrowRight /></button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.road} className="card-img-top" alt="..." />
-          <h5>Road Repair Request</h5>
-          <p></p>
-        </div>
-      </div>
-
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.pension} className="card-img-top" alt="..." />
-          <h5>Pension Request</h5>
-          <p></p>
-        </div>
-      </div>
-
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.license} className="card-img-top" alt="..." />
-          <h5>License Application</h5>
-          <p></p>
-        </div>
-      </div>
-
-      <div className="col-md-3">
-        <div className="step-card text-center p-4 shadow-sm rounded-4">
-          <img src={assets.ration} className="card-img-top" alt="..." />
-          <h5>Ration Card Services</h5>
-          <p></p>
-        </div>
-      </div>
-
     </div>
   </div>
-  </div>
-
-
-  </div>
-
+</div>
 
 
 
@@ -239,8 +232,8 @@ const Home = () => {
         
 
    
-      
-    </div>
+    </div>  
+
   )
 }
 
