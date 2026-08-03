@@ -219,3 +219,193 @@
     line-height:1.7;
     background:#fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------Media quaries ------------------------------------------------ */
+
+/* ---------------------Track Header----------------------------- */
+@media(max-width: 835px){
+.track-header .left-text{
+    padding: 30px 0px 0px 30px;
+    width: 100%;
+}
+}
+
+@media (max-width: 670px){
+.track-header{
+    flex-direction: column;
+    padding: 15px 15px 0px 15px;
+}
+.right-illustration img{ 
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.track-header .left-text{
+    padding: 30px 30px 0px 30px;
+    width: 100%;
+    text-align: center;
+}
+}
+@media(max-width: 530px){
+.right-illustration img{ 
+    width: 400px;
+}
+.track-header .left-text{
+    width: 100%;
+}
+
+}
+@media(max-width: 450px){
+.right-illustration img{ 
+    width: 400px;
+}
+}
+@media(max-width: 450px){
+.right-illustration img{ 
+    width: 300px;
+}
+}
+
+
+/* --------------------Track input part---------------------- */
+@media(max-width: 880px){ 
+    .track-input{
+        width: 400px;
+    }
+}
+@media(max-width: 770px){
+    .search-input{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .track-input{
+        width: 100%;
+    }
+}
+@media(max-width: 500px){
+    .track-input{
+        width: 100%;
+        font-size: 14px;
+    }
+    .track-btn{
+        width: 100%;
+    }
+    .search-mobile .track-mobile{
+       width: 300px;
+       font-size: 14px;
+    }
+}
+@media(max-width: 450px){
+    .track-input{
+        width: 100%;
+        font-size: 12px;
+    }
+    .track-btn{
+        width: 100%;
+    }
+    .search-mobile .track-mobile{
+       width: 100%;
+       font-size: 12px;
+    }
+}
+
+
+
+/* ---------------------Frequently QA part-------------------- */
+@media(max-width: 960px){
+    .Faq-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+     .faq-left{
+        width: 100%;
+    }
+    .faq-img img{
+       display: none;
+    }
+}
+@media (max-width: 576px){
+
+    .FAQ-card{
+        width: 95%;
+        padding: 20px;
+    }
+    .faq-left{
+        width: 100%;
+    }
+
+    .accordion-btn{
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .accordion-content{
+        padding: 14px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .faq-mark{
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        font-size: 16px;
+    }
+
+    .faq-icon{
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 400px){
+
+    .FAQ-card{
+        padding: 15px;
+    }
+
+    .accordion-btn{
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .accordion-content{
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .faq-mark{
+        width: 26px;
+        height: 26px;
+        min-width: 26px;
+        font-size: 14px;
+    }
+}

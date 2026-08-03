@@ -33,10 +33,8 @@
     justify-content: center;
     gap: 20px;
 }
-
-.contact-info,
-.contact-form{
-    width: 500px;
+.contact-info{
+    flex: 1 1 35%;
     padding: 30px;
     background: #fff;
     border-radius: 10px;
@@ -44,8 +42,13 @@
 }
 
 .contact-form{
-    width: 600px;
+    flex: 2 1 65%; 
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(11, 59, 57, 0.08);
 }
+
 .address{
     display: flex;
     align-items: stretch;
@@ -94,7 +97,11 @@
 
 
 
-
+.contact-part-1,
+.location-map{
+    width: 90%;
+    margin: 20px auto;
+}
 
 
 
@@ -102,55 +109,198 @@
 /* -------------------------------------------------------------------- Location Map ----------------------------------------------------------------------------------------- */
 
 .location-map{
-    width:83%;
     display: flex;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
     padding: 30px;
-    margin: 30px auto;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 8px 24px rgba(11, 59, 57, 0.08);
+    box-shadow: 0 8px 24px rgba(11,59,57,0.08);
 }
+
 .left-add{
-     padding: 10px;
+    width: 320px;
+    flex-shrink: 0;
 }
+
+.loc-map{
+    flex: 1;
+}
+
+.loc-map iframe{
+    width: 100%;
+    height: 280px;
+    border: 0;
+    border-radius: 8px;
+    display: block;
+}
+/* Title */
 
 .loc-title{
     display: flex;
-    align-items: center;   /* Vertical alignment */
-    gap: 10px;             /* Space between icon and text */
+    align-items: center;
+    gap: 10px;
 }
+
 .map-icon{
     color: #0B3B39;
     font-size: 25px;
 }
+
 .loc-title h5{
-    margin: 0;             /* Remove default h5 margin */
+    margin: 0;
     color: #0B3B39;
     font-weight: 600;
 }
+
 .subtitle{
-    padding-top: 25px;
+    margin-top: 25px;
     color: #4A5568;
 }
 
 .sub-add{
-    padding-top: 0px;
     color: #0B3B39;
     font-weight: 600;
 }
+
+/* Button */
+
 .map-btn{
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #0B3B39;
     color: #fff;
-    background-color: #0B3B39;
     border: none;
     border-radius: 8px;
-    padding: 6px 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
 .map-btn:hover{
-    background-color: #247976;
+    background: #247976;
 }
+
 .map-btn span{
-    padding: 10px;
-    font-weight: 600;
-    font-size: 18px;
+    margin-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------Media quaries ------------------------------------------------ */
+
+
+/* ---------------------- Contact Header------------------------------- */
+
+@media(max-width: 1120px){
+
+    .contact-part-1,
+    .location-map{
+        width: 95%;
+    }
+    .contact-info,
+    .contact-form{
+        padding: 25px;
+    }
+}
+@media(max-width: 1100px){
+.address .add-icon{
+    width: 70px;
+    font-size: 25px;
+}
+.address  p{
+    font-size: 14px;
+}
+.contact-part-1,
+.location-map{
+    width: 90%;
+    margin: 20px auto;
+}
+}
+
+@media(max-width: 1075px){
+    
+.location-map{
+    gap: 10px;
+}
+.address .add-icon{
+    width: 70px;
+    font-size: 25px;
+}
+.address  p{
+    font-size: 13px;
+}}
+
+@media(max-width: 1000px){
+.location-map{
+    gap: 0px;
+}
+.address .add-icon{
+    width: 50px;
+    font-size: 20px;
+}
+.address  p{
+    font-size: 13px;
+    line-height: 1.4;
+}}
+@media (max-width: 912px){
+
+    .contact-header{
+        padding: 40px 20px;
+    }
+
+    .contact-header p{
+        width: 85%;
+    }
+
+    .contact-part-1{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contact-info,
+    .contact-form{
+        width: 100%;
+        flex: none;
+        padding: 25px;
+    }
+
+    .location-map{
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .left-add{
+        width: 100%;
+        padding: 0;
+    }
+
+    .loc-map{
+        width: 100%;
+        flex: none;
+    }
+
+    .loc-map iframe{
+        width: 100%;
+        height: 300px;   /* Adjust height if needed */
+    }
 }
