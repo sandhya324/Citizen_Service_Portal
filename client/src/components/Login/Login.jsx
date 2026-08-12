@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
+
 import './Login.css'
 
 const Login = ({setShowLogin}) => {
 
+  const navigate = useNavigate();
   const [currState, setCurrState] = useState("Register");
 
   const [formData, setFormData] = useState({
@@ -19,10 +22,43 @@ const Login = ({setShowLogin}) => {
     })
   }
 
+  // const handleSubmit = async (e) => {
+  // e.preventDefault();
+
+  // if (currState === "Register") {
+  //   try {
+  //     const response = await fetch(
+  //       "http://localhost:5000/api/users/register",
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json"
+  //         },
+  //         body: JSON.stringify(formData)
+  //       }
+  //     );
+
+  //     const data = await response.json();
+
+  //     if (response.ok) {
+  //       alert(data.message);
+  //       setCurrState("Login");
+  //     } else {
+  //       alert(data.message);
+  //     }
+
+  //   } catch (error) {
+  //     console.error(error);
+  //     alert("Something went wrong");
+  //   }
+  //  }
+  // };
+
   const handleSubmit = async (e) => {
   e.preventDefault();
 
   if (currState === "Register") {
+
     try {
       const response = await fetch(
         "http://localhost:5000/api/users/register",
@@ -48,9 +84,44 @@ const Login = ({setShowLogin}) => {
       console.error(error);
       alert("Something went wrong");
     }
-   }
-  };
 
+  } else {
+
+    // LOGIN
+    try {
+      const response = await fetch(
+        "http://localhost:5000/api/users/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            email: formData.email,
+            password: formData.password
+          })
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert(data.message);
+
+        setShowLogin(false);
+
+        navigate("/dashboard");
+
+      } else {
+        alert(data.message);
+      }
+
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong");
+    }
+  }
+};
 
 
   return (

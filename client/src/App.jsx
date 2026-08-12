@@ -14,6 +14,7 @@ import ContactUs from './pages/ContactUs/ContactUs'
 import AboutUs from './pages/AboutUs/AboutUs'
 import FAQs from './pages/FAQs/FAQs'
 import HelpSupport from './pages/HelpSupport/HelpSupport'
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 
 
@@ -40,7 +41,7 @@ const App = () => {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/FAQs" element={<FAQs />} />
         <Route path="/HelpSupport" element={<HelpSupport />} />
-
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
     <ScrollTop />
